@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>YUJIN_IVE_LORA | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">yujin_ive_lora</h1>
+            <li style="margin-left: auto;"><a href="yil.html" target="_blank">Overall</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <img src="images/.png" alt="Icon of yujin_ive_lora" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+         <h1>About</h1>
+         <p>yujin_ive_lora is a program designed to generate pictures of Yujin, who is an idol in the K-pop industry and a member of the South Korean girl group IVE. This program utilizes LoRA models, which are small Stable Diffusion models that apply subtle modifications to standard checkpoint models. LoRA models are known for their compact size, typically being 10 to 100 times smaller than traditional checkpoint models.</p>
+         <p><i><b>yujin_ive_lora V2 will be launched in the first quarter of next year.</b></i></p>
+         <p>Platform: Stable Diffusion</p>
+         <p>Language: /</p>
+         <p>Dataset (reg)： woman_v1-5_mse_vae_ddim50_cfg7_n4420</p>
+         <p>Source model: Open-source -- <a href="https://github.com/Carson-We/Machine-Learning/tree/main/LORA/yujin_ive_lora">GitHub</a></p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

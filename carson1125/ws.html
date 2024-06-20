@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>WEBSITE STATUS | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ws_zh.html">中文</a></li>
+                <li><a href="ws.html">English</a></li>
+                <li><a href="ws_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <h1>Website Status</h1>
+        <div class="container">
+           <h2>Website Status</h2>
+           <div>
+            <p>Website Server: <span id="website-status">Loading...</span></p>
+            <p>GitHub Pages Server: <span id="github-pages"></span></p>
+           </div>
+           <h2>WebUI Status</h2>
+           <div>
+            <p>A.N.A. WebUI Server: <span id="ana-webui">Loading...</span></p>
+            <p>Fruit Classifier WebUI Server: <span id="fc-webui">Loading...</span></p>
+            <p>FERD WebUI WebUI Server: <span id="ic-webui">Loading...</span></p>
+            <p>K.R.I.S.T.Y. WebUI Server: <span id="kristy-webui">Loading...</span></p>
+           </div>
+           <div>
+            <div class="dashed-line"></div>
+            <p>Last updated: <span id="current-date"></span></p>
+            <p>Symbol:</p>
+            <p style="color: green; ">√ = Normal</p>
+            <p>⌛ = Loading</p>
+            <p style="color: red; ">× = Offline</p>
+            <p>If you are experiencing an issue not listed here, contact support: <span id="contact-link" style="cursor: pointer; display: inline;"><i><u>carson.developer1125@gmail.com</u></i></span></p>
+           </div>
+         <script src="scripts/healthcheck.js"></script>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <script src="scripts/date.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

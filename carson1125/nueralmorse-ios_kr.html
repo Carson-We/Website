@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>NeuralMorse | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="nueralmorse_zh.html">中文</a></li>
+                <li><a href="nueralmorse.html">English</a></li>
+                <li><a href="nueralmorse_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav> 
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">NeuralMorse</h1>
+            <li style="margin-left: auto;"><a href="nueralmorse.html" target="_blank">개요</a></li>
+            <li style="margin-left: auto;"><a href="nueralmorse-ios_kr.html" target="_blank">NeuralMorse Mobile</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <img src="images/neuralmorse.png" alt="NeuralMorse 아이콘" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+            <h1>About</h1>
+            <p>NeuralMorse 는 신경망을 활용하여 텍스트를 모스 부호로 번역하거나 그 반대로 번역하는 것을 목표로 합니다. 이 도구는 인간이 읽을 수 있는 텍스트와 모스 부호 표현 사이에서 메시지를 변환하는 편리한 방법을 제공합니다. 모스 부호로 통신하거나 모스 부호 메시지를 해독하려는 경우 NeuralMorse가 도움이 될 것입니다.</p>
+            <p>컴퓨팅 플랫폼: iOS</p>
+            <p>프로그래밍 언어: SwiftUI</p>
+            <p>소스 형태: 오픈 소스 소 -- <a href="https://github.com/Carson-We/iOS-app/tree/main/NeuralMorse">GitHub</a></p>
+        </div>
+            <footer>
+                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+                <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+            </footer>
+            <script src="scripts/version.js"></script>
+            <script src="scripts/cr_en.js"></script>
+            <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

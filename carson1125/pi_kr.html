@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_kr.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>π | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="pi_zh.html">中文</a></li>
+                <li><a href="pi.html">English</a></li>
+                <li><a href="pi_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+            </ul>
+          </nav>
+        </nav>  
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">π</h1>
+            <li style="margin-left: auto;"><a href="pi.html" target="_blank">개요</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="images/pi.png" alt="π 아이콘" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+        <div class="container">
+        <h1>다운로드</h1>
+        <p>π는 원주와 지름의 비율을 나타내는 수학 상수입니다.</p>
+        <p>컴퓨팅 플랫폼: 멀티 플랫폼</p>
+        <p>프로그래밍 언어: 파이썬(Python)</p>
+        <p>소스 형태: 오픈 소스 소 -- <a href="https://github.com/Carson-We/Mathematics/tree/main/Pi">GitHub</a></p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">버전: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_kr.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
+</body>
+</html>

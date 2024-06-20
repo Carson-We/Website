@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <script src="scripts/bw.js"></script>
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>Software developer | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button style="top: 20px; " class="dropdown-btn btn dropbtn">
+                <span>Translate Button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+        </header>
+    <section class="contains">
+        <h1>軟體開發是一門創意十足的工藝，我將自己視為一位技藝精湛的藝術家，用每一筆程式碼編織著輝煌。 - Carson Wu，傑出的開發人員。</h1>
+    </section>
+    
+    <section class="card">
+        <h2>即將進行的項目</h2>
+        <h3>yujin_ive_lora</h3>
+        <p>yujin_ive_lora 使用 LoRA 模型產生 K-pop 樂團 IVE 的偶像 Yujin 的照片，LoRA 模型是修改標準檢查點模型的小型穩定擴散模型。</p>
+            <button class="btn btn1" onclick="window.open('yil_zh.html', '_blank')">了解更多</button>
+    </section>
+
+    <section class="card">
+        <h2>最近項目</h2>
+        <h3>FERD</h3>
+        <p>FERD 使用計算機視覺分析面部表情，推斷情緒。</p>
+        <button class="btn btn1" onclick="window.open('ferd_zh.html', '_blank')">了解更多</button>
+    </section>
+    
+    <section class="card">
+        <h2>已完成項目</h2>
+        <h3>Image Classifier</h3>
+        <p>Image Classifier 使用機器學習和計算機視覺準確將圖像分類到不同的類別或分類中，通過分析視覺特徵和模式。</p>
+        <button class="btn btn1" onclick="window.open('ic_zh.html', '_blank')">了解更多</button>
+    </section>
+    
+    <section>
+        <h2 style="color: #0366d6"><a href="contact_zh.html">Contact</a></h2>
+        <p id="contact-link" style="cursor: pointer;">電子郵件: <i><u>carson.developer1125@gmail.com</u></i></p>
+    </section>
+
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+    </footer>
+    <script src="scripts/version.js"></script>
+    <script src="scripts/cr_zh.js"></script>
+    <script src="scripts/nor_zh.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>

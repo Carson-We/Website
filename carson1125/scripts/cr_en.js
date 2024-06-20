@@ -1,0 +1,1 @@
+document.getElementById("cr").textContent = "Copyright © 2024 Carson. All rights reserved.";

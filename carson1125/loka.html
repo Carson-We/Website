@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>L.O.K.A. | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="loka_zh.html">中文</a></li>
+                <li><a href="loka.html">English</a></li>
+                <li><a href="loka_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+                <li><a href="ws.html" target="_blank">Website Status</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="Blog.html" target="_blank">Blog</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="project.html" target="_blank">Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">L.K.O.A.</h1>
+            <li style="margin-left: auto;"><a href="loka.html" target="_blank">Overall</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <img src="images/loka.png" alt="Icon of L.K.O.A" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+         <h1>About</h1>
+         <p>L.K.O.A. is an advanced system used in automotive technology to ensure safe and autonomous driving. By combining sensors, cameras, and machine learning algorithms, L.K.O.A. enables vehicles to detect and analyze road conditions, identify lane markings, and avoid obstacles in real-time. This system plays a crucial role in enhancing road safety and improving driver assistance features.</p>
+         <p>Platform: /</p>
+        <p>Language: /</p>
+        <p>Source model: Open-source -- <a href="https://github.com/Carson-We/Machine-Learning/tree/main/Computer-Vision/Lane-Keeping%20and%20Obstacle-Avoidance%20System">GitHub</a></p>
+         <p><i><b>L.O.K.A. will be launched in the first quarter of next year.</b></i></p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

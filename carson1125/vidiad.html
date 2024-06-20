@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>ViDiAD | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="vidiad_zh.html">中文</a></li>
+                <li><a href="vidiad.html">English</a></li>
+                <li><a href="vidiad_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">VIDIAD</h1>
+            <li style="margin-left: auto;"><a href="vidiad.html" target="_blank">Overall</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <img src="images/vidiad.png" alt="Icon of VIDIAD" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+         <h1>About</h1>
+         <p>ViDiAD is an abbreviation for Vision-based Distance Analysis. It refers to the vision-based distance analysis component of a system used in a donkey car, which is an autonomous vehicle platform. The ViDiAD component helps the donkey car navigate its surroundings by estimating the distances to various obstacles or objects. It utilizes computer vision algorithms to calculate the depth information from the captured images, allowing the car to understand its position relative to nearby objects. This information is crucial for safe navigation and obstacle avoidance.</p>
+         <p><i><b>ViDiAD will be launched in the first quarter of next year.</b></i></p>
+         <p>Platform: Donkey Car</p>
+         <p>Language: Python</p>
+         <p>Source model: Open-source -- <a href="https://github.com/Carson-We/Machine-Learning/tree/main/Computer-Vision/ViDiAD">GitHub</a></p>
+        </div>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

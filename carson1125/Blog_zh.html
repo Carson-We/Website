@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor_zh.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>BLOG | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="Blog_zh.html">中文</a></li>
+                <li><a href="Blog.html">English</a></li>
+                <li><a href="Blog_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+    </header>
+    <section>
+        <div id="blog-container"></div>
+    </section>
+    <script src="scripts/blog_zh.js"></script>
+    <script src="scripts/blog-script_zh.js"></script>
+
+<footer>
+    <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+    <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+</footer>
+<script src="scripts/version.js"></script>
+<script src="scripts/cr_zh.js"></script>
+<script src="scripts/date.js"></script>
+<iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+
+<button onclick="scrollToTop()" class="btn btn1">置頂</button>
+</body>
+</html> 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>π | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="pi_zh.html">中文</a></li>
+                <li><a href="pi.html">English</a></li>
+                <li><a href="pi_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">π</h1>
+            <li style="margin-left: auto;"><a href="pi.html" target="_blank">Overall</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <img src="images/pi.png" alt="Icon of π" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+         <h1>About</h1>
+         <p>π is a mathematical constant that represents the ratio of the circumference of a circle to its diameter.</p>
+         <p>Platform: Multi-platform</p>
+         <p>Language: Python</p>
+         <p>Source model: Open-source -- <a href="https://github.com/Carson-We/Mathematics/tree/main/Pi">GitHub</a></p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

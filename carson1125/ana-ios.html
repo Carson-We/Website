@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>A.N.A. Mobile | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ana_zh.html">中文</a></li>
+                <li><a href="ana.html">English</a></li>
+                <li><a href="ana_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">A.N.A.</h1>
+            <li style="margin-left: auto;"><a href="ana.html" target="_blank">Overall</a></li>
+            <li style="margin-left: auto;"><a href="ana-ios.html" target="_blank">A.N.A. Mobile</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="container">
+                <img src="images/ana.png" alt="Icon of A.N.A." style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+                <h1>About</h1>
+                <p> A.N.A. (Autonomous Neural Avatar) is a state-of-the-art technology designed for creating digital replicas or avatars of oneself. This innovative system utilizes advanced algorithms and machine learning techniques to generate lifelike and interactive digital clones. With A.N.A., users can personalize their avatars, replicating their appearance, behavior, and even personality traits. This groundbreaking technology opens up possibilities for virtual communication, entertainment, and self-expression.</p>
+                <p><i><b>A.N.A. will be launched in the second quarter of next year.</b></i></p>
+                <p>Platform: iOS</p>
+                <p>Language: SwiftUI</p>
+                <p>Source model: Open-source -- <a href="https://github.com/Carson-We/iOS-app/tree/main/A.N.A.">GitHub</a></p>
+        </div>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_en.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>   
+    </body>
+</html>

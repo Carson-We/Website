@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>NeuralMorse | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="nueralmorse_zh.html">中文</a></li>
+                <li><a href="nueralmorse.html">English</a></li>
+                <li><a href="nueralmorse_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav> 
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">NeuralMorse</h1>
+            <li style="margin-left: auto;"><a href="nueralmorse.html" target="_blank">概覽</a></li>
+            <li style="margin-left: auto;"><a href="nueralmorse-ios.html" target="_blank">NeuralMorse Mobile</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <img src="images/neuralmorse.png" alt="NeuralMorse 的圖示" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+            <h1>About</h1>
+            <p>NeuralMorse 利用神經網絡將文本翻譯為摩斯電碼，反之亦然。該工具提供了一個方便的方式，在人可讀的文本和摩斯電碼表示之間轉換消息。無論您想要用摩斯電碼進行通信還是解碼摩斯電碼消息，NeuralMorse都能滿足您的需求。</p>
+            <p>運行平台: 多平台</p>
+            <p>編程語言: Python</p>
+            <p>原始碼模式：開源 -- <a href="https://github.com/Carson-We/Machine-Learning/tree/main/Neural%20Network/NeuralMorse">GitHub</a></p>
+        </div>
+            <footer>
+                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+                <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+            </footer>
+            <script src="scripts/version.js"></script>
+            <script src="scripts/cr_en.js"></script>
+            <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

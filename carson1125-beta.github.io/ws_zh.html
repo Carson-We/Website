@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/healthcheck_zh.js"></script>
+    <script src="scripts/nor_zh.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>WEBSITE STATUS | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ws_zh.html">中文</a></li>
+                <li><a href="ws.html">English</a></li>
+                <li><a href="ws_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button style="display: flex; justify-content: center; position: absolute; top: 20px; left: 40%; max-width: 20px; cursor: pointer;" class="dropdown-btn1 btn1 dropbtn1 menu-icon">
+                <span>&#9776;</span>
+                <span class="arrow"></span>
+            </button>
+            <ul style="top: 45px; left: 29%; " class="dropdown-content1">
+                <li><a href="about_zh.html">關於</a></li>
+                <li><a href="Blog_zh.html">部落格</a></li>
+                <li><a href="contact_zh.html">聯絡</a></li>
+                <li><a href="project_zh.html">專案</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+    </header>
+    <h1>網站狀態</h1>
+        <div class="container">
+            <h2>網站狀態</h2>
+            <div>
+                <p>網站伺服器: <span id="website-status">載入中...</span></p>
+                <p>GitHub Pages 伺服器: </span id="github-pages">載入中...</span></p>
+            </div>
+            <h2>網頁版伺服器</h2>
+            <div>
+                <p>A.N.A. 網頁版伺服器: <span id="ana-webui">載入中...</span></p>
+                <p>Fruit Classifier 網頁版伺服器: <span id="fc-webui">載入中...</span></p>
+                <p>FERD 網頁版伺服器: <span id="ic-webui">載入中...</span></p>
+                <p>K.R.I.S.T.Y. 網頁版伺服器: <span id="kristy-webui">載入中...</span></p>
+            </div>
+           <div class="dashed-line"></div>
+           <p>最後更新: <span id="current-date"></span></p>
+           <p>符號:</p>
+            <p style="color: green; ">√ = 正常</p>
+            <p>⌛ = 載入中</p>
+            <p style="color: red; ">×  = 離線</p>
+           <p>如果您遇到此處未列出的問題，請聯絡支援人員：<span id="contact-link" style="cursor: pointer; display: inline;"><i><u>carson.developer1125@gmail.com</u></i></span></p>
+        </div>
+        <script src="scripts/version.js"></script>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">版本n: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_zh.js"></script>
+        <script src="scripts/date.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>
