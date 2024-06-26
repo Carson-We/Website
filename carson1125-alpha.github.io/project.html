@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
         <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
               <li><a href="project_zh.html">中文</a></li>
@@ -37,8 +37,9 @@
                 <img src="images/kristy.png" alt="Icon of A.R.I.E.L." style="width: 200px; height: 200px;">
                 <h2>Advanced Retrieval and Inference Engine for Learning(A.R.I.E.L.)</h2>
                 <p>A.R.I.E.L. uses natural language processing and machine learning to assist with test-related tasks, enhancing productivity and efficiency.</p>
-                <button class="btn btn1" onclick="window.open('kristy.html', '_blank')">Learn More</button>
+                <button class="btn btn1" onclick="openPopup()">Learn More</button>
             </div>
+
           <div class="card">
             <img src="images/ana.png" alt="Icon of A.N.A." style="width: 200px; height: 200px;">
             <h2>Autonomous Neural Avatar（A.N.A.）</h2>
