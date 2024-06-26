@@ -36,23 +36,3 @@ window.addEventListener('load', function() {
                 }
             });
         });
-
-        window.addEventListener('DOMContentLoaded', function() {
-            var dropdownButton = document.querySelector('.dropdown-btn1');
-            var dropdownContent = document.querySelector('.dropdown-content1');
-        
-            var isHovered = false;
-        
-            dropdownButton.addEventListener('click', function() {
-                dropdownContent.classList.toggle('active');
-                isHovered = false;
-            });
-        
-            window.addEventListener('click', function(event) {
-                if (!dropdownButton.contains(event.target)) {
-                    dropdownContent.classList.remove('active');
-                    isHovered = false;
-                }
-            });
-        });
-        
