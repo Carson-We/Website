@@ -31,6 +31,7 @@ Thank you for your interest and contributions to the project!
 ## Deploy
 
 - [carson1125: my website](https://carson-we.github.io/Website/carson1125/)
-- [self: my first website](https://carson-we.github.io/Website/Self/)
+- [carson1125-alpha.github.io: my website(alpha version)](https://carson-we.github.io/Website/carson1125-alpha.github.io/)
 - [carson1125-beta.github.io: my website(beta version)](https://carson-we.github.io/Website/carson1125-beta.github.io/)
 - [pess-unify-beta.github.io: Unify website(beta version)](https://carson-we.github.io/Website/pess-unify-beta.github.io/)
+- [self: my first website](https://carson-we.github.io/Website/Self/)
