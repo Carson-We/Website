@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor_zh.js"></script>
+    <script src="scripts/email.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>CONTACT | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="contact_zh.html">中文</a></li>
+                <li><a href="contact.html">English</a></li>
+                <li><a href="contact_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+        </header>
+
+    <div class="contact-info">
+        <p id="contact-link" style="cursor: pointer;">電子郵件: <span id="contact-link" style="cursor: pointer; display: inline;"><i><u>carson.developer1125@gmail.com</u></i></span></p>
+        <p>Instagram: <a href="https://instagram.com/we.carson"><i class="fab fa-instagram"></i></a></p>
+        <p>GitHub: <a href="https://github.com/Carson-We"><i class="fab fa-github"></i></a></p>
+    </div>
+  
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+    </footer>
+    <script src="scripts/version.js"></script>
+    <script src="scripts/cr_zh.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>
