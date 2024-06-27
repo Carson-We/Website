@@ -185,17 +185,23 @@ footer {
     flex-wrap: wrap;
 }
 
+.stm-container {
+  display: grid;
+  grid-gap: 20px;
+  margin-left: 10px;
+}
+
   .column {
     width: 100%;
     margin-bottom: 20px;
   }
   @media (min-width: 600px) {
-    .container {
+    .stm-container {
         grid-template-columns: repeat(2, 1fr);
     }
   }
   @media (min-width: 900px) {
-    .container {
+    .stm-container {
         grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -241,3 +247,6 @@ footer {
     cursor: pointer;
   }
       
+  .container {
+    margin-left: 10px;
+  }
