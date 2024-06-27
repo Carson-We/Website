@@ -25,24 +25,14 @@
             </ul>
           </nav>
     </header>
-    <div class="error-404">
-        <div style="display: flex; justify-content: center;" class="error-404">
-            <h1 style="color: purple;">Error 404</h1>
-        </div>
-        <div style="display: flex; justify-content: center;" class="error-404">
-            <p style="color: purple">This page could not be found.</p>
-        </div>
-        <div style="display: flex; justify-content: center;">
-            <button class="btn btn1" onclick="window.open('index.html', '_self')">Back Home</button>
-        </div>
-    </div>
         <footer>
-            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+            <div>
+                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            
+                <p style="cursor: pointer;" onclick="goToVE()"><span id="ve"></span></p>
+            </div>
         </footer>
-        <script src="scripts/version.js"></script>
-        <script src="scripts/cr_en.js"></script>
-        <script src="scripts/date.js"></script>
+        <script src="scripts/word.js"></script>
         <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>

@@ -38,10 +38,6 @@ function goToVEkr() {
     window.location.href = "ve_kr.html";
 }
 
-window.addEventListener('load', function() {
-    document.body.classList.add('loaded');
-});
-
 window.addEventListener('DOMContentLoaded', function() {
     var dropdownButton = document.querySelector('.dropbtn');
     var dropdownContent = document.querySelector('.dropdown-content');
