@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
-    <script src="scripts/nor_kr.js"></script>
-    <script src="scripts/bw.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>ABOUT | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
-        <nav>
+        <h1 class="cw" onclick="goToHomePagekr()">Carson Wu</h1>
+          <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">🌍</button>
+            <ul class="dropdown-content">
+              <li><a href="about_zh.html">中文</a></li>
+              <li><a href="about.html">Eng</a></li>
+              <li><a href="about_kr.html">한글</a></li>
+            </ul>
+          </div>
+          <nav>
             <ul class="menu">
                 <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
                 <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
@@ -20,8 +27,7 @@
             </ul>
           </nav> 
     </header>
-       
-        <div class="container">
+    <div class="container">
            <h1>나에 대해</h1>
            <p>소프트웨어 개발은 창의적인 공예입니다. 나는 각각의 코드 브러시 스트로크로 뛰어난 작품을 만들어내는 마스터 아티스트로 자신을 여깁니다. - Carson Wu, 탁월한 개발자.</p>
            <p>나는 홍콩 출신의 천재 소년인 Carson Wu입니다. 나는 매혹적인 인공지능(AI)과 기계 학습(ML) 분야에 특화되어 있습니다. 소프트웨어 개발은 복잡해 보일지 모르지만, 나는 경외심과 상상력으로 접근하며 각각의 코드 라인을 비범한 작품을 창조하는 데 사용하는 뛰어난 획으로 여깁니다.</p>
@@ -32,13 +38,11 @@
            <p>AI와 ML에 특화된 세계적인 개발자로서의 여정을 시작하면서, 나는 지속적인 학습과 진화에 헌신할 것입니다. 이러한 기술의 미래 가능성과 잠재력은 우리의 세상을 깊이 감동시킵니다. 각각의 프로젝트마다, 나는 섬세하게 만들어진 코드를 통해 AI와 ML의 뛰어남을 드러내며, 인DELIBLE한 인상을 남기기를 소망합니다.</p>
            <p>AI와 ML 분야에서의 어린이로서, 여러분의 프로젝트에 기여할 수 있는 AI와 ML 영역에서 열정적인 열망을 가진 젊고 재능있는 열기를 가진 사람을 찾고 있다면, 저는 기쁨으로 협력할 준비가 되어 있습니다. 함께 AI와 ML의 가능성이 완전히 실현되고, 뛰어남이 코드의 각 줄에서 발산되는 미래를 그려봅시다.</p>
         </div>
-
         <footer>
-            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-            <p style="cursor: pointer;" onclick="goToVE()">버전: <span id="version"></span></p>
+            <p style="cursor: pointer;" onclick="goToCRkr()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVEkr()"><span id="version"></span></p>
         </footer>
-        <script src="scripts/version.js"></script>
-        <script src="scripts/cr_kr.js"></script>
+        <script src="scripts/word.js"></script>
         <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
 </body>
 </html>

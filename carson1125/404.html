@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_404.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="scripts/nor.js"></script>
-    <script src="scripts/bw.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>404 PAGE | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
         <div class="dropdown">
-            <button class="dropdown-btn btn dropbtn">
-                <span>Translate button</span>
-                <span class="arrow"></span>
-            </button>
+            <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
-                <li><a href="404.html">English</a></li>
+              <li><a href="404.html">Eng</a></li>
             </ul>
-        </div>
+          </div>
         <nav>
             <ul class="menu">
                 <li><a href="about.html" target="_blank">About</a></li>
@@ -40,13 +36,11 @@
             <button class="btn btn1" onclick="window.open('index.html', '_self')">Back Home</button>
         </div>
     </div>
-        <footer>
-            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
-        </footer>
-        <script src="scripts/version.js"></script>
-        <script src="scripts/cr_en.js"></script>
-        <script src="scripts/date.js"></script>
-        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+    </footer>
+    <script src="scripts/word.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>

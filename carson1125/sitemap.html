@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_stm.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="scripts/nor.js"></script>
-    <script src="scripts/bw.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>SITEMAP | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
         <div class="dropdown">
-            <button class="dropdown-btn btn dropbtn">
-                <span>Translate button</span>
-                <span class="arrow"></span>
-            </button>
+        <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
-                <li><a href="sitemap_zh.html">中文</a></li>
-                <li><a href="sitemap.html">English</a></li>
-                <li><a href="sitemap_kr.html">한글</a></li>
+              <li><a href="sitemap_zh.html">中文</a></li>
+              <li><a href="sitemap.html">Eng</a></li>
+              <li><a href="sitemap_kr.html">한글</a></li>
             </ul>
-        </div>
+          </div>
         <nav>
             <ul class="menu">
                 <li><a href="about.html" target="_blank">About</a></li>
@@ -31,72 +27,34 @@
             </ul>
           </nav>
     </header>
-    <body>
-        <h2>About</h2>
-        <ul class="tree">
-            <li><a href="about_kr.html" target="_blank">About</a></li>
-            <li><a href="Blog_kr.html" target="_blank">Blog</a></li>
-        </ul>
-        <div class="solid-line"></div>
-            <h2><a href="project.html" target="_blank">Project</a></h2>
+    <div class="stm-container">
+        <div>
+            <h2>About</h2>
             <ul class="tree">
-                <li>
-                    <a href="kristy.html" target="_blank">A.R.I.E.L.</a>
-                </li>
-                <li>
-                    <a href="ana.html" target="_blank">A.N.A.</a>
-                </li>
-                <li>
-                    <a href=".html" target="_blank">CSQADSS</a>
-                </li>
-                <li>
-                    <a href="fc.html" target="_blank">Fruit Classifier</a>
-                </li>
-                <li>
-                    <a href="ferd.html" target="_blank">FERD</a>
-                </li>
-                <li>
-                    <a href="ic.html" target="_blank">Image Classifier</a>
-                </li>
-                <li>
-                    <a href="loka.html" target="_blank">L.K.O.A.</a>
-                </li>
-                <li>
-                    <a href=".html" target="_blank">MindCheck</a>
-                </li>
-                <li>
-                    <a href=".html" target="_blank">NeuralMorse</a>
-                </li>
-                <li>
-                    <a href="pv.html" target="_blank">Project V</a>
-                </li>
-                <li>
-                    <a href="vidiad.html" target="_blank">VIDIAD</a>
-                </li>
-                <li>
-                    <a href="yil.html" target="_blank">yujin_ive_lora</a>
-                </li>
-                <li>
-                    <a href="pi.html" target="_blank">π</a>
-                </li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
             </ul>
-        </ul>
-        <div class="solid-line"></div>
-        <h2>Support</h2>
-        <ul class="tree">
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-            <li><a href="li.html" target="_blank">Copyright Information & License</a></li>
-            <li><a href="https://github.com/Carson-We/Documentation" target="_blank">Documentation</a></li>
-            <li><a href="sitemap.html" target="_blank">Sitemap</a></li>
-            <li><a href="ve.html" target="_blank">Version</a></li>
-            <li><a href="ws.html" target="_blank">Website Status</a></li>
-        </ul>
+        </div>
+        <div>
+            <h2><a href="project.html" target="_blank">Project</a></h2>
+        </div>
+        <div>
+            <h2>Support</h2>
+            <ul class="tree">
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="li.html" target="_blank">Copyright Information & License</a></li>
+                <li><a href="https://github.com/Carson-We/Documentation" target="_blank">Documentation</a></li>
+                <li><a href="sitemap.html" target="_blank">Sitemap</a></li>
+                <li><a href="ve.html" target="_blank">Version</a></li>
+                <li><a href="ws.html" target="_blank">Website Status</a></li>
+            </ul>
+        </div>
+    </div>
     <footer>
         <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-        <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
     </footer>
-    <script src="scripts/version.js"></script>
-    <script src="scripts/cr_en.js"></script>
+    <script src="scripts/word.js"></script>
     <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>

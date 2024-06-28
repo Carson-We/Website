@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
-    <script src="scripts/nor_zh.js"></script>
-    <script src="scripts/bw.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>ABOUT | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePagezh()">Carson Wu</h1>
         <div class="dropdown">
-            <button class="dropdown-btn btn dropbtn">
-                <span>Translate button</span>
-                <span class="arrow"></span>
-            </button>
+            <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
-                <li><a href="about_zh.html">中文</a></li>
-                <li><a href="about.html">English</a></li>
-                <li><a href="about_kr.html">한글</a></li>
+              <li><a href="about_zh.html">中文</a></li>
+              <li><a href="about.html">Eng</a></li>
+              <li><a href="about_kr.html">한글</a></li>
             </ul>
-        </div>
+          </div>
         <nav>
             <ul class="menu">
               <li><a href="about_zh.html" target="_blank">關於</a></li>
@@ -31,8 +27,7 @@
             </ul>
           </nav>
     </header>
-    
-        <div class="container">
+    <div class="container">
             <h1>關於我</h1>
             <p>軟體開發是一門富有創意的藝術工藝，我將自己視為一位嫻熟的藝術家，每一行程式碼都是我編織出卓越之作的筆觸。── Carson Wu，非凡的開發者。</p>
             <p>我是 Carson Wu，來自香港的一位天才少年，專攻迷人的人工智慧（AI）和機器學習（ML）領域。儘管軟體開發看似複雜，但我以一種敬畏與想像力的心態接觸，將每一行程式碼視為一筆筆創造非凡之作的筆觸。</p>
@@ -45,11 +40,10 @@
         </div>
 
         <footer>
-            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-            <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
-        </footer>
-        <script src="scripts/version.js"></script>
-        <script src="scripts/cr_zh.js"></script>
+          <p style="cursor: pointer;" onclick="goToCRzh()"><span id="cr"></span></p>
+          <p style="cursor: pointer;" onclick="goToVEzh()"><span id="version"></span></p>
+      </footer>
+      <script src="scripts/word.js"></script>
         <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
 </body>
 </html>

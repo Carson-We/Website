@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="scripts/nor.js"></script>
-    <script src="scripts/bw.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>VERSION | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
         <div class="dropdown">
-            <button class="dropdown-btn btn dropbtn">
-                <span>Translate button</span>
-                <span class="arrow"></span>
-            </button>
-            <ul class="dropdown-content">
-                <li><a href="ve_zh.html">中文</a></li>
-                <li><a href="ve.html">English</a></li>
-                <li><a href="ve_kr.html">한글</a></li>
-            </ul>
-        </div>
+        <button class="dropdown-btn btn dropbtn">🌍</button>
+        <ul class="dropdown-content">
+          <li><a href="ve_zh.html">中文</a></li>
+          <li><a href="ve.html">Eng</a></li>
+          <li><a href="ve_kr.html">한글</a></li>
+        </ul>
+      </div>
       <nav>
           <ul class="menu">
               <li><a href="about.html" target="_blank">About</a></li>
@@ -31,52 +27,125 @@
           </ul>
         </nav>
     </header>
-       
-        <div class="container">
-            <ol>
-                <li>
-                  <strong>Software Version Stages:</strong>
-                  <ol type="a">
-                    <li>Development Version (Alpha): This version indicates that the software is in the early stages of development, focusing primarily on implementing software features. It is usually used internally by the software developers. This version may have more errors and defects that need further refinement.</li>
-                    <li>Testing Version (Beta): Compared to the Alpha version, the Beta version has significant improvements and resolves major errors. However, it may still have some defects that require testing and feedback for further improvement.</li>
-                    <li>Release Candidate (RC) Version: The RC version is an important stage following the Beta version, indicating that the software has entered the final testing phase and may become a candidate for the official release. At this stage, the software usually eliminates most known errors and defects and meets the expected functionality and quality requirements.</li>
-                    <li>Stable Version: This version indicates that the software has become relatively stable, with most errors and defects fixed. However, there may still be a few minor issues present.</li>
-                    <li>Release Version: This version represents the final release, having undergone comprehensive testing and verification, and is ready for normal user use.</li>
-                  </ol>
-                </li>
-                <li>
-                  <strong>Version Numbering and Naming Guidelines:</strong>
-                  <ol type="a">
-                    <li>
-                      The software version number consists of four parts: the first 1 is the major version number, the second 1 is the minor version number, the third 1 is the stage version number, and the fourth part is the date version number followed by the Greek letter version number. There are four Greek letter options: a, b, rc, r. For example: 111011223r.
-                      <ol type="i">
-                        <li>Major Version Number (1): Increase the major version number when there are significant functional changes or architectural adjustments in the software.</li>
-                        <li>Minor Version Number (1): Increase the minor version number when there are feature additions or modifications in the software.</li>
-                        <li>Stage Version Number (1): Generally used for bug fixes, performance improvements, or minor changes, increment the stage version number.</li>
-                        <li>Greek Letter Version Number (r): This version number is used to indicate the development stage of the current software version. Modify this version number when the software enters another stage.</li>
-                        <li>Date Version Number (011223): Used to record the current date of modifications. The date version number needs to be updated every day for project modifications.</li>
-                      </ol>
-                    </li>
-                    <li>
-                      The software version number consists of three parts: the first 1 is the major version number, the second 1 is the minor version number, and the third 1 is the stage version number. For example: v1.1.1.
-                      <ol type="i">
-                        <li>Major Version Number (1): Increase the major version number when there are significant functional changes or architectural adjustments in the software.</li>
-                        <li>Minor Version Number (1): Increase the minor version number when there are feature additions or modifications in the software.</li>
-                        <li>Stage Version Number (1): Generally used for bug fixes, performance improvements, or minor changes, increment the stage version number.</li>
-                        <li>Revision Version Number (1): Generally used for bug fixes, performance improvements, or minor changes, increment the revision version number.</li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-        </div>
-
+    <div class="container">
+      <ol>
+        <li>
+          <strong>Software Version Stages:</strong>
+          <ol type="a">
+            <li>
+              Development Version (Alpha):
+              <p>
+                This version indicates that the software is in the early stages of development, focusing primarily on implementing software features. It is usually used internally by the software developers. This version may have more errors and defects that need further refinement.
+              </p>
+            </li>
+            <li>
+              Testing Version (Beta):
+              <p>
+                Compared to the Alpha version, the Beta version has significant improvements and resolves major errors. However, it may still have some defects that require testing and feedback for further improvement.
+              </p>
+            </li>
+            <li>
+              Release Candidate (RC) Version:
+              <p>
+                The RC version is an important stage following the Beta version, indicating that the software has entered the final testing phase and may become a candidate for the official release. At this stage, the software usually eliminates most known errors and defects and meets the expected functionality and quality requirements.
+              </p>
+            </li>
+            <li>
+              Stable Version:
+              <p>
+                This version indicates that the software has become relatively stable, with most errors and defects fixed. However, there may still be a few minor issues present.
+              </p>
+            </li>
+            <li>
+              Release Version:
+              <p>
+                This version represents the final release, having undergone comprehensive testing and verification, and is ready for normal user use.
+              </p>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <ol>
+        <li>
+          <strong>Version Numbering and Naming Guidelines:</strong>
+          <ol type="i">
+            <li>
+              The software version number consists of five parts: the first part represents the major version number, the second part represents the minor version number, the third part represents the stage version number, the fourth part represents the revision version number, and the fifth part represents the build number. For example: v1.1.5.0(001).
+            </li>
+            <li>
+              Major Version Number (1):
+              <p>
+                Increase the major version number when there are significant functional changes or architectural adjustments in the software.
+              </p>
+            </li>
+            <li>
+              Minor Version Number (1):
+              <p>
+                Increase the minor version number when there are feature additions or modifications in the software.
+              </p>
+            </li>
+            <li>
+              Stage Version Number (1):
+              <p>
+                Generally used for bug fixes, performance improvements, or minor changes. Increment the stage version number.
+              </p>
+            </li>
+            <li>
+              Revision Version Number (1):
+              <p>
+                Generally used for bug fixes, performance improvements, or minor changes. Increment the revision version number.
+              </p>
+            </li>
+            <li>
+              Build Number (001):
+              <p>
+                Used to represent the specific build or release of the software. Increment the build number for each new build.
+              </p>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <li>
+        The software version number consists of five parts: the first digit represents the major version number, the second digit represents the minor version number, and the third digit represents the stage version number. For example: v1.1.5.0(001).
+        <ol type="i">
+          <li>
+            Major Version Number (1):
+            <p>
+              Increment the major version number when there are significant functional changes or architectural adjustments in the software.
+            </p>
+          </li>
+          <li>
+            Minor Version Number (1):
+            <p>
+              Increment the minor version number when there are feature additions or modifications in the software.
+            </p>
+          </li>
+          <li>
+            Stage Version Number (1):
+            <p>
+              Generally used for bug fixes, performance improvements, or minor changes. Increment the stage version number.
+            </p>
+          </li>
+          <li>
+            Revision Version Number (1):
+            <p>
+              Generally used for bug fixes, performance improvements, or minor changes. Increment the revision version number.
+            </p>
+          </li>
+          <li>
+            Build Number (001):
+            <p>
+              Represents the specific build or release of the software. Increment the build number for each new build.
+            </p>
+          </li>
+        </ol>
+      </li>
+    </div>
         <footer>
           <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-          <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+          <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
       </footer>
-      <script src="scripts/version.js"></script>
-      <script src="scripts/cr_en.js"></script>
+      <script src="scripts/word.js"></script>
       <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>

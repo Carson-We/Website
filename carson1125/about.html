@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="scripts/nor.js"></script>
-    <script src="scripts/bw.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>ABOUT | Carson Wu</title>
 </head>
 <body>
     <header>
-        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
         <div class="dropdown">
-            <button class="dropdown-btn btn dropbtn">
-                <span>Translate button</span>
-                <span class="arrow"></span>
-            </button>
+        <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
-                <li><a href="about_zh.html">中文</a></li>
-                <li><a href="about.html">English</a></li>
-                <li><a href="about_kr.html">한글</a></li>
+              <li><a href="about_zh.html">中文</a></li>
+              <li><a href="about.html">Eng</a></li>
+              <li><a href="about_kr.html">한글</a></li>
             </ul>
+          </div>
         </div>
         <nav>
             <ul class="menu">
@@ -31,7 +28,7 @@
             </ul>
           </nav>
     </header>
-        <div class="container">
+    <div class="container">
            <h1>About Me</h1>
            <p>Software development is a creative craft, and I see myself as a masterful artist, weaving brilliance with every stroke of code. - Carson Wu, the Extraordinary Developer.</p>
            <p>I am Carson Wu, a talented young prodigy from Hong Kong specializing in the fascinating fields of Artificial Intelligence (AI) and Machine Learning (ML). Despite the perceived complexity of software development, I approach it with a mindset of awe and imagination, considering each line of code as a stroke of brilliance I use to create extraordinary things.</p>
@@ -43,11 +40,10 @@
            <p>If you are seeking a young, talented enthusiast in the realms of AI and ML to contribute to your projects, I would be thrilled to collaborate with you. Together, let us paint a future where the possibilities of AI and ML are fully realized, and where brilliance radiates from every line of code.</p>
         </div>
         <footer>
-            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-            <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
-        </footer>
-        <script src="scripts/version.js"></script>
-        <script src="scripts/cr_en.js"></script>
+          <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+          <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+      </footer>
+      <script src="scripts/word.js"></script>
         <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>
