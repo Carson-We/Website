@@ -69,3 +69,29 @@ function toggleAdditionalInfo(id) {
         btn.innerText = 'Learn More';
     }
 }
+
+function toggleAdditionalInfozh(id) {
+    var additionalInfo = document.getElementById(id);
+    var btn = additionalInfo.previousElementSibling;
+
+    if (additionalInfo.style.display === 'none') {
+        additionalInfo.style.display = 'block';
+        btn.innerText = '隱藏細節';
+    } else {
+        additionalInfo.style.display = 'none';
+        btn.innerText = '了解更多';
+    }
+}
+
+function toggleAdditionalInfokr(id) {
+    var additionalInfo = document.getElementById(id);
+    var btn = additionalInfo.previousElementSibling;
+
+    if (additionalInfo.style.display === 'none') {
+        additionalInfo.style.display = 'block';
+        btn.innerText = '세부정보 숨기기';
+    } else {
+        additionalInfo.style.display = 'none';
+        btn.innerText = '자세히 알아보기';
+    }
+}
