@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_zh.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>PROJECT V | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="pv_zh.html">中文</a></li>
+                <li><a href="pv.html">English</a></li>
+                <li><a href="pv_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button style="display: flex; justify-content: center; position: absolute; top: 20px; left: 40%; max-width: 20px; cursor: pointer;" class="dropdown-btn1 btn1 dropbtn1 menu-icon">
+                <span>&#9776;</span>
+                <span class="arrow"></span>
+            </button>
+            <ul style="top: 45px; left: 29%; " class="dropdown-content1">
+                <li><a href="about_zh.html">關於</a></li>
+                <li><a href="Blog_zh.html">部落格</a></li>
+                <li><a href="contact_zh.html">聯絡</a></li>
+                <li><a href="project_zh.html">專案</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">Project V</h1>
+            <li style="margin-left: auto;"><a href="pv_zh.html" target="_blank">概覽</a></li>
+            <li><a href="pv-d_zh.html" target="_blank">下載</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+         <h1>關於此項目</h1>
+         <p>Project V 是一項利用人工智慧的力量來保護和保存地球的倡議。 Project V 旨在透過先進的人工智慧演算法和數據分析來應對氣候變遷、森林砍伐和污染等環境挑戰。 透過利用人工智慧技術，Project V 尋求開發創新的解決方案和策略，為子孫後代保護地球。</p>
+         <p>運行平台: 多平台</p>
+        <p>編程語言: Python</p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_zh.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>

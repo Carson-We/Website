@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_kr.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>A.N.A. Mobile | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ana_zh.html">中文</a></li>
+                <li><a href="ana.html">English</a></li>
+                <li><a href="ana_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">A.N.A.</h1>
+            <li style="margin-left: auto;"><a href="ana_kr.html" target="_blank">개요</a></li>
+            <li style="margin-left: auto;"><a href="ana-ios_kr.html" target="_blank">A.N.A. Mobile</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="container">
+                <h1>다운로드</h1>
+                <img src="images/ana-ios.png" alt="A.N.A. 아이콘" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+                <p> A.N.A. (자율 신경 아바타) 디지털 복제본이나 자신의 아바타를 만들기 위해 설계된 최첨단 기술입니다. 이 혁신적인 시스템은 고급 알고리즘과 기계 학습 기술을 활용하여 실물과 같은 대화형 디지털 클론을 생성합니다. A.N.A.를 통해 사용자는 아바타의 외모, 행동, 심지어 성격 특성까지 복제하여 아바타를 개인화할 수 있습니다. 이 획기적인 기술은 가상 커뮤니케이션, 엔터테인먼트, 자기 표현의 가능성을 열어줍니다.</p>
+                <p><i><b>A.N.A. 내년 2분기 출시 예정.</b></i></p>
+                <p>컴퓨팅 플랫폼: iOS</p>
+                <p>프로그래밍 언어: SwiftUI</p>
+                <p>소스 형태: 오픈 소스 소 -- <a href="https://github.com/Carson-We/iOS-app/tree/main/A.N.A.">GitHub</a></p>
+            </div>
+        </div>
+    
+             <footer>
+                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+                <p style="cursor: pointer;" onclick="goToVE()">버전: <span id="version"></span></p>
+            </footer>
+            <script src="scripts/version.js"></script>
+            <script src="scripts/cr_kr.js"></script>
+            <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
+</body>
+</html>

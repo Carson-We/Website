@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_kr.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>OUREYES | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="oe_zh.html">中文</a></li>
+                <li><a href="oe.html">English</a></li>
+                <li><a href="oe_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button style="display: flex; justify-content: center; position: absolute; top: 20px; left: 40%; max-width: 20px; cursor: pointer;" class="dropdown-btn1 btn1 dropbtn1 menu-icon">
+                <span>&#9776;</span>
+                <span class="arrow"></span>
+            </button>
+            <ul style="top: 45px; left: 29%; " class="dropdown-content1">
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">Oureyes</h1>
+            <li><a href="oe_kr.html" target="_blank">개요</a></li>
+            <li><a href="oe-d_kr.html" target="_blank">다운로드</a></li>
+            <li><a href="Docs/AOP.pdf" target="_blank">연구 논문></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <h1>다운로드</h1>
+            <p>Oureyes는 장애인을 돕기 위해 설계된 지능형 안경입니다. 컴퓨터 비전과 인공 지능 기술을 통합한 Oureyes는 시각 정보를 인식하고 해석하여 시각 장애가 있는 개인에게 향상된 지원을 제공할 수 있습니다. 스마트 안경은 물체 인식, 장애물 감지 및 내비게이션을 지원하여 사용자가 주변 환경을 보다 독립적으로 탐색할 수 있도록 해줍니다.</p>
+            <p>컴퓨팅 플랫폼: EyesOS(Oureyes)</p>
+            <p>프로그래밍 언어: 파이썬(Python)</p>
+        </div>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">버전: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_kr.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
+</body>
+</html>

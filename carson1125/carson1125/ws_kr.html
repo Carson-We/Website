@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/healthcheck_kr.js"></script>
+    <script src="scripts/nor_kr.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>WEBSITE STATUS | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ws_zh.html">中文</a></li>
+                <li><a href="ws.html">English</a></li>
+                <li><a href="ws_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+            </ul>
+          </nav>
+    </header>
+    <h1>웹사이트 상태</h1>
+        <div class="container">
+           <h2>웹사이트 상태</h2>
+           <div>
+            <p>웹사이트 섬기는 사람: <span id="website-status">로드 중...</span></p>
+            <p>GitHub Pages 섬기는 사람: <span id="github-pages">로드 중...</span></p>
+        </div>
+        <h2>웹 버전 섬기는 사람</h2>
+        <div>
+           <p>A.N.A. 웹 버전 섬기는 사람: <span id="ana-webui">로드 중...</span></p>
+           <p>Fruit Classifier 웹 버전 섬기는 사람: <span id="fc-webui">로드 중...</span></p>
+           <p>FERD WebUI 웹 버전 섬기는 사람: <span id="ic-webui">로드 중...</span></p>
+           <p>K.R.I.S.T.Y. 웹 버전 섬기는 사람: <span id="kristy-webui">로드 중...</span></p>
+        </div>
+        <div class="dashed-line"></div>
+           <p>마지막 업데이트: <span id="current-date"></span></p>
+           <p>상징:</p>
+            <p style="color: green; ">√ = 정상</p>
+            <p>⌛ =로드 중</p>
+            <p style="color: red; ">×  = 오프라인</p>
+           <p>여기에 나열되지 않은 문제가 발생하는 경우 지원팀에 문의하세요: <span id="contact-link" style="cursor: pointer; display: inline;"><i><u>carson.developer1125@gmail.com</u></i></span></p>
+        </div>
+        <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">버전: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_kr.js"></script>
+        <script src="scripts/date.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
+</body>
+</html>

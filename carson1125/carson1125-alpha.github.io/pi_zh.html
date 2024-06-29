@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_zh.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>π | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="pi_zh.html">中文</a></li>
+                <li><a href="pi.html">English</a></li>
+                <li><a href="pi_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav>
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">π</h1>
+            <li style="margin-left: auto;"><a href="pi_zh.html" target="_blank">概覽</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="container">
+         <h1>關於此項目</h1>
+         <img src="images/pi.png" alt="π 的圖示" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+         <p>π 是一個數學常數，表示圓的周長與其直徑的比值。</p>
+         <p>運行平台: 多平台</p>
+         <p>編程語言: Python</p>
+         <p>原始碼模式：開源 -- <a href="https://github.com/Carson-We/Utility/tree/main/Tools/Mathematics/Pi">GitHub</a></p>
+     </div>
+         <footer>
+            <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+            <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+        </footer>
+        <script src="scripts/version.js"></script>
+        <script src="scripts/cr_zh.js"></script>
+        <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>
