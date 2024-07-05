@@ -2,11 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script src="scripts/nor.js"></script>
-    <script src="scripts/utillty.js"></script>
     <meta charset="UTF-8">
+    <script src="scripts/nor.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="images/favicon.ico" rel="shortcut icon"/>
-    <title>M3U8 to MP4 converter | Carson Utility</title>
+    <title>Utillty | Carson Utility</title>
 </head>
 <body>
     <header>
@@ -14,9 +14,9 @@
         <div class="dropdown">
             <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
-              <li><a href="m3u8_zh.html">中文</a></li>
-              <li><a href="m3u8.html">Eng</a></li>
-              <li><a href="m3u8_kr.html">한글</a></li>
+              <li><a href="utility_zh.html">中文</a></li>
+              <li><a href="utility.html">Eng</a></li>
+              <li><a href="utility_kr.html">한글</a></li>
             </ul>
           </div>
           <nav>
@@ -28,18 +28,26 @@
             </ul>
           </nav>
     </header>
-    <div class="container">
-        <h1>M3U8 to MP4 Converter</h1>
-        <form id="conversion-form">
-            <label for="m3u8-url">M3U8 URL:</label>
-            <input type="text" id="m3u8-url">
-            <button class="btn btn1" type="submit">Convert to MP4</button>
-        </form>
-         <div id="conversion-result" class="hidden">
-            <h2>Conversion Result</h2>
-            <a href="#" id="download-link">Download MP4</a>
-        </div>
-    </div>
+        <section>
+            <h1>Utillty</h2>
+        </section>
+        <section class="card-container">
+            <div class="card">
+                <h2>Clock</h2>
+                <p>This Utillty consists of a UTC and local time clock, and stopwatch</p>
+                <button class="btn btn1" onclick="window.open('clock.html', '_blank')">Learn More</button>
+            </div>
+            <div class="card">
+                <h2>M3U8 to MP4 Converter</h2>
+                <p>Converter M3U8 to MP4</p>
+                <button class="btn btn1" onclick="window.open('m3u8.html', '_blank')">Learn More</button>
+            </div>
+            <div class="card">
+                <h2>π</h2>
+                <p>Calculate the value of π</p>
+                <button class="btn btn1" onclick="window.open('pi.html', '_blank')">Learn More</button>
+            </div>
+        </section>
     <footer>
         <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
         <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
