@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/blog.js"></script>
+    <script src="scripts/blog_script.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>BLOG | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+        <button class="dropdown-btn btn dropbtn">🌍</button>
+            <ul class="dropdown-content">
+              <li><a href="Blog_zh.html">中文</a></li>
+              <li><a href="Blog.html">Eng</a></li>
+              <li><a href="Blog_kr.html">한글</a></li>
+            </ul>
+          </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+          </nav>
+    </header>
+    <section>
+        <div id="blog-container"></div>
+    </section>
+    <script src="scripts/blog.js"></script>
+    <script src="scripts/blog-script.js"></script>
+
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+    </footer>
+    <script src="scripts/word.js"></script>
+    <script src="scripts/date.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <button onclick="scrollToTop()" class="btn btn1">Scroll to Top</button>
+</body>
+</html> 
