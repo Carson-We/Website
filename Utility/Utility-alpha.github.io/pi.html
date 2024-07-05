@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/pi.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>Pi | Carson Wu Utility</title>
+</head>
+<body>
+    <header>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu <span class="gradient-text">Utility</span></h1>
+        <nav>
+            <ul class="menu">
+            </ul>
+          </nav>
+    </header>
+    <div class="container">
+        <h1>Calculating π</h1>
+        <label for="decimal-places">Decimal Places:</label>
+        <input type="number" id="decimal-places" min="0" step="1" value="0">
+        <button class="btn btn1" onclick="calculatePi()">Start Calculating</button>
+        <p id="result"></p>
+    </div>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+    </footer>
+    <script src="scripts/word.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

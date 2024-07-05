@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>INDEX | Carson Wu Utility</title>
+</head>
+<body>
+    <header>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu <span class="gradient-text">Utility</span></h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">🌍</button>
+            <ul class="dropdown-content">
+              <li><a href="index_zh.html">中文</a></li>
+              <li><a href="index.html">Eng</a></li>
+              <li><a href="index_kr.html">한글</a></li>
+            </ul>
+          </div>
+        <nav>
+            <ul class="menu">
+            </ul>
+          </nav>
+    </header>
+    <section class="card-container">
+        <div class="card">
+            <h2>Upcoming Utillty</h2>
+            <img src="images/.png" alt="Icon of yujin_ive_lora" style="width: 200px; height: 200px;">
+            <h3>/</h3>
+            <p>/</p>
+            <button class="btn btn1" onclick="window.open('project.html', '_blank')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Recent Utillty</h2>
+            <img src="images/ferd.png" alt="Icon of FERD" style="width: 200px; height: 200px;">
+            <h3>/</h3>
+            <p>/</p>
+            <button class="btn btn1" onclick="window.open('project.html', '_blank')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Completed Utillty</h2>
+            <img src="images/ic.png" alt="Icon of Image Classifier" style="width: 200px; height: 200px;">
+            <h3>/</h3>
+            <p>/</p>
+            <button class="btn btn1" onclick="window.open('project.html', '_blank')">Learn More</button>
+        </div>
+    </section>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+    </footer>
+    <script src="scripts/word.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>
