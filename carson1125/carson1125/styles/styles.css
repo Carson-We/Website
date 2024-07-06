@@ -94,6 +94,7 @@ footer {
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
+    font-family: "Times New Roman", serif;
 }
 
 .btn1 {
@@ -103,6 +104,7 @@ footer {
   padding: 6px 12px;
   font-size: 12px;
   transition-duration: 0.3s;
+  font-family: "Times New Roman", serif;
 }
 
 .btn1:hover {
