@@ -94,6 +94,7 @@ footer {
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
+    font-family: "Times New Roman", serif;
 }
 
 .btn1 {
@@ -103,6 +104,7 @@ footer {
   padding: 6px 12px;
   font-size: 12px;
   transition-duration: 0.3s;
+  font-family: "Times New Roman", serif;
 }
 
 .btn1:hover {
@@ -203,19 +205,20 @@ footer {
   margin-left: 10px;
 }
 
+@media (min-width: 600px) {
+  .stm-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .stm-container {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
   .column {
     width: 100%;
     margin-bottom: 20px;
-  }
-  @media (min-width: 600px) {
-    .stm-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 900px) {
-    .stm-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
   }
   
   .tree {
@@ -273,33 +276,4 @@ footer {
 
   a {
     color: #0366d6;
-  }
-
-  .gradient-text {
-    color: #0366d6;
-    cursor: pointer;
-  }
-
-  form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input, button {
-    margin-top: 5px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-
-  .btn-start {
-    background-color: green;
-  }
-
-  .btn-stop {
-    background-color: red;
   }
