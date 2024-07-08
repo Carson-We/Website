@@ -277,3 +277,35 @@ footer {
   a {
     color: #0366d6;
   }
+
+  .litr {
+    color: #f8fcfe;
+    background: transparent;
+    border: 2px solid #f8fcfd;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+}
+
+.litr1 {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #f8fcfd;
+  padding: 6px 12px;
+  font-size: 12px;
+  transition-duration: 0.3s;
+  font-family: "Times New Roman", serif;
+}
+
+.litr1:hover {
+  background-color: white;
+  color: black;
+}
