@@ -1,5 +1,12 @@
 var blogs = [
   {
+    title: "Utility-beta.github.io",
+    subtitle: "Technical blog about Utility-beta.github.io Scheduled Events",
+    author: "Carson Wu",
+    date: "10 July 2024",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/July/10_07_2024/10072024.md"
+  },
+  {
     title: "Carson1125",
     subtitle: "Technical blog about carson1125 'v1.1.5.0(004)(1150_004-290624r)' update",
     author: "Carson Wu",
@@ -38,10 +45,17 @@ var blogs = [
 
 var blogs_zh = [
   {
+    title: "Utility-beta.github.io",
+    subtitle: "有關 Utility-beta.github.io 預定活動的技術部落格",
+    author: "Carson Wu",
+    date: "2024年7月10日",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/July/10_07_2024/10072024_zh.md"
+  },
+  {
     title: "Carson1125",
     subtitle: "有關 carson1125 'v1.1.5.0(004)(1150_004-290624r)' 更新的技術部落格",
     author: "Carson Wu",
-    date: "29 June 2024",
+    date: "2024年6月29日",
     link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/June/28_06_2024/1150_002-290624r_zh.md"
   },
   {
@@ -51,7 +65,6 @@ var blogs_zh = [
     date: "2024年4月7日",
     link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/April/07_04_2024/Ariel_zh.md"
   },
-
     {
       title: "K.R.I.S.T.Y.",
       subtitle: "邏輯推理系統開發遭遇挫折",
@@ -77,10 +90,17 @@ var blogs_zh = [
 
 var blogs_kr = [
   {
+    title: "Utility-beta.github.io",
+    subtitle: "Utility-beta.github.io 예정된 이벤트에 대한 기술 블로그",
+    author: "Carson Wu",
+    date: "2024년 7월 10일",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/July/10_07_2024/10072024_kr.md"
+  },
+  {
     title: "Carson1125",
     subtitle: "carson1125 'v1.1.5.0(004)(1150_004-290624r)' 업데이트에 대한 기술 블로그",
     author: "Carson Wu",
-    date: "29 June 2024",
+    date: "2024년 6월 29일",
     link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/June/28_06_2024/1150_004-290624r_kr.md"
   },
   {
