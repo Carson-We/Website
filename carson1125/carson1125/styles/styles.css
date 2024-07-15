@@ -309,3 +309,7 @@ footer {
   background-color: white;
   color: black;
 }
+
+.additional-info {
+  display: none;
+}
