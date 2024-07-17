@@ -61,37 +61,35 @@ function toggleAdditionalInfo(id) {
     var additionalInfo = document.getElementById(id);
     var btn = additionalInfo.previousElementSibling;
 
-    if (additionalInfo.style.display === 'none') {
-        additionalInfo.style.display = 'block';
-        btn.innerText = 'Hide Details';
+    if (additionalInfo.style.height === '0px') {
+      additionalInfo.style.height = additionalInfo.scrollHeight + 'px';
+      btn.innerText = 'Hide Details';
     } else {
-        additionalInfo.style.display = 'none';
-        btn.innerText = 'Learn More';
+      additionalInfo.style.height = '0px';
+      btn.innerText = 'Learn More';
     }
-}
-
-function toggleAdditionalInfozh(id) {
+  }
+  function toggleAdditionalInfozh(id) {
     var additionalInfo = document.getElementById(id);
     var btn = additionalInfo.previousElementSibling;
 
-    if (additionalInfo.style.display === 'none') {
-        additionalInfo.style.display = 'block';
-        btn.innerText = '隱藏細節';
+    if (additionalInfo.style.height === '0px') {
+      additionalInfo.style.height = additionalInfo.scrollHeight + 'px';
+      btn.innerText = '隱藏細節';
     } else {
-        additionalInfo.style.display = 'none';
-        btn.innerText = '了解更多';
+      additionalInfo.style.height = '0px';
+      btn.innerText = '了解更多';
     }
-}
-
-function toggleAdditionalInfokr(id) {
+  }
+  function toggleAdditionalInfokr(id) {
     var additionalInfo = document.getElementById(id);
     var btn = additionalInfo.previousElementSibling;
 
-    if (additionalInfo.style.display === 'none') {
-        additionalInfo.style.display = 'block';
-        btn.innerText = '세부정보 숨기기';
+    if (additionalInfo.style.height === '0px') {
+      additionalInfo.style.height = additionalInfo.scrollHeight + 'px';
+      btn.innerText = '세부정보 숨기기';
     } else {
-        additionalInfo.style.display = 'none';
-        btn.innerText = '자세히 알아보기';
+      additionalInfo.style.height = '0px';
+      btn.innerText = '자세히 알아보기';
     }
-}
+  }
