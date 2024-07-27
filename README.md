@@ -30,9 +30,9 @@ Thank you for your interest and contributions to the project!
 
 ## Deployment
 ### carson1125
-- [carson1125: my website](https://carson-we.github.io/Website/carson1125/carson1125/)
 - [carson1125-alpha.github.io: my website(alpha version)](https://carson-we.github.io/Website/carson1125/carson1125-alpha.github.io/)
 - [carson1125-beta.github.io: my website(beta version)](https://carson-we.github.io/Website/carson1125/carson1125-beta.github.io/)
+- [carson1125: my website](https://carson-we.github.io/Website/carson1125/carson1125/)
 ### pess-unify
 - [pess-unify-beta.github.io: Unify website(beta version)](https://carson-we.github.io/Website/pess-unify/pess-unify-beta.github.io/)
 - [pess-unify.github.io: Unify website(Deployed by Carson Wu)](https://carson-we.github.io/Website/pess-unify/pess-unify.github.io/)
@@ -40,5 +40,7 @@ Thank you for your interest and contributions to the project!
 
 [self: my first website](https://carson-we.github.io/Website/Self/)
 
-### utility
-- [utility-alpha.github.io: my utility website(alpha version)](https://carson-we.github.io/Website/Utility/Utility-alpha.github.io/)
+### Utility
+- [Utility-alpha.github.io: my utility website(alpha version)](https://carson-we.github.io/Website/Utility/Utility-alpha.github.io/)
+- [Utility-beta.github.io: my utility website(beta version)](https://carson-we.github.io/Website/Utility/Utility-beta.github.io/)
+- [Utility.github.io: my utility website](https://carson-we.github.io/Website/Utility/Utility.github.io/)
