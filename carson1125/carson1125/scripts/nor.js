@@ -93,3 +93,27 @@ function toggleAdditionalInfo(id) {
       btn.innerText = '자세히 알아보기';
     }
   }
+
+  var initSubject = 'Initial Subject';
+        var initBody = 'Initial Body';
+
+        function submitHandler() {
+            var to = "carson.developer1125@gmail.com";
+            var name = document.getElementById('nameText').value;
+            var email = document.getElementById('emailText').value;
+            var tel = document.getElementById('telText').value;
+            var subject = document.getElementById('subText').value;
+            var body = document.getElementById('bodyText').value + '%0A%0A%0A';
+            body += "From: " + name + '%0A';
+            body += "Email: " + email + '%0A';
+            body += "Tel: " + tel;
+
+            var mailTo = document.getElementById('mailTo');
+            mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+            mailTo.click();
+        }
+
+        function init() {
+            document.getElementById('subText').value = initSubject;
+            document.getElementById('bodyText').value = initBody;
+        }

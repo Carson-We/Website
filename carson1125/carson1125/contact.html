@@ -28,10 +28,24 @@
           </nav> 
         </header>
         <div class="container">
-        <p style="cursor: pointer;">email: <a href="mailto:carson.developer1125@gmail.com"><u>carson.developer1125@gmail.com</u></a></p>
-        <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
-        <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
-        <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h1>Contact</h1>
+          <p style="cursor: pointer;">email: <a href="mailto:carson.developer1125@gmail.com"><u>carson.developer1125@gmail.com</u></a></p>
+          <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
+          <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
+          <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h2>Contact Form</h2>
+              <label for="nameText">Name:</label>
+              <input type="text" id="nameText" placeholder="Enter your name" required><br><br>
+              <label for="emailText">Email:</label>
+              <input type="email" id="emailText" placeholder="Enter your email" required><br><br>
+              <label for="telText">Phone:</label>
+              <input type="tel" id="telText" placeholder="Enter your phone number" required><br><br>
+              <label for="subText">Subject:</label>
+              <input type="text" id="subText" placeholder="Enter the subject" required><br><br>
+              <label for="bodyText">Message:</label><br>
+              <textarea id="bodyText" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+              <button class="btn btn1" onclick="submitHandler()">Submit</button>
+              <a id="mailTo" style="display:none;"></a>
         </div>
         <footer>
           <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>

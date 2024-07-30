@@ -28,10 +28,24 @@
           </nav>
         </header>
         <div class="container">
-        <p style="cursor: pointer;">電子郵件: <a href="mailto:carson.developer1125@gmail.com"><i><u>carson.developer1125@gmail.com</u></i></a></p>
-        <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
-        <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
-        <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h1>聯絡</h1>
+          <p style="cursor: pointer;">電子郵件: <a href="mailto:carson.developer1125@gmail.com"><i><u>carson.developer1125@gmail.com</u></i></a></p>
+          <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
+          <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
+          <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h2>Contact Form</h2>
+          <label for="nameText">姓名：</label>
+          <input type="text" id="nameText" placeholder="輸入你的名字" required><br><br>
+          <label for="emailText">電子郵件：:</label>
+          <input type="email" id="emailText" placeholder="輸入你的電子郵件信箱" required><br><br>
+          <label for="telText">電話號碼：</label>
+          <input type="tel" id="telText" placeholder="輸入你的電話號碼" required><br><br>
+          <label for="subText">主題：</label>
+          <input type="text" id="subText" placeholder="輸入主題" required><br><br>
+          <label for="bodyText">訊息：</label><br>
+          <textarea id="bodyText" rows="4" cols="50" placeholder="輸入您的訊息"></textarea><br><br>
+          <button class="btn btn1" onclick="submitHandler()">Submit</button>
+          <a id="mailTo" style="display:none;"></a>
         </div>
         <footer>
           <p style="cursor: pointer;" onclick="goToCRkr()"><span class="crzh"></span></p>

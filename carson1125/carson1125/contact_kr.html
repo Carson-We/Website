@@ -28,10 +28,24 @@
           </nav>
         </header>
         <div class="container">
-        <p style="cursor: pointer;">이메일: <a href="mailto:carson.developer1125@gmail.com"><i><u>carson.developer1125@gmail.com</u></i></a></p>
-        <a class="litr litr1" href="https://instagram.com/we.carson">인스 타 그램</a>
-        <a class="litr litr1" href="https://github.com/Carson-We">깃허브</a>
-        <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h1>나에게 연락</h1>
+          <p style="cursor: pointer;">이메일: <a href="mailto:carson.developer1125@gmail.com"><i><u>carson.developer1125@gmail.com</u></i></a></p>
+          <a class="litr litr1" href="https://instagram.com/we.carson">인스 타 그램</a>
+          <a class="litr litr1" href="https://github.com/Carson-We">깃허브</a>
+          <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+          <h2>문의 양식</h2>
+          <label for="nameText">이름:</label>
+          <input type="text" id="nameText" placeholder="이름을 입력하세요" 필수><br><br>
+          <label for="emailText">이메일:</label>
+          <input type="email" id="emailText" placeholder="이메일을 입력하세요" 필수><br><br>
+          <label for="telText">전화:</label>
+          <input type="tel" id="telText" placeholder="전화번호를 입력하세요" 필수><br><br>
+          <label for="subText">제목:</label>
+          <input type="text" id="subText" placeholder="제목을 입력하세요" 필수><br><br>
+          <label for="bodyText">메시지:</label><br>
+          <textarea id="bodyText" rows="4" cols="50" placeholder="메시지를 입력하세요"></textarea><br><br>
+          <button class="btn btn1" onclick="submitHandler()">제출</button>
+          <a id="mailTo" style="display:none;"></a>
         </div>
         <footer>
           <p style="cursor: pointer;" onclick="goToCRkr()"><span class="crkr"></span></p>
