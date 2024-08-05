@@ -1,90 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/404.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/about.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/about_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/about_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/credits.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/credits_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/credits_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/li.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/li_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/li_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/NMN.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/project.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/project_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/project._krhtml</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/index.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/index_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/index_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap_kr.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve_zh.html</loc>
-    </url>
-    <url>
-        <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve_kr.html</loc>
-    </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+            
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/index_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/index.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/index_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/about.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/project.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap-b.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/about_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/project_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap-b_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/about_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/Blog_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/contact_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/project_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap-b_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/li.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/credits.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/li_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/li_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/sitemap_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ve_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ws_zh.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ws.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://carson-we.github.io/Website/carson1125/carson1125/ws_kr.html</loc>
+  <lastmod>2024-08-05T10:59:47+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
 </urlset>
