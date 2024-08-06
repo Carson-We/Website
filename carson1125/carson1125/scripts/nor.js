@@ -117,3 +117,18 @@ function toggleAdditionalInfo(id) {
             document.getElementById('subText').value = initSubject;
             document.getElementById('bodyText').value = initBody;
         }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const birthDate = new Date(2010, 10, 25);
+
+  const ageDate = new Date(Date.now() - birthDate.getTime());
+  const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+  const preciseAge = age + ageDate.getMonth() / 12 + ageDate.getDate() / 365;
+
+  const integerAge = Math.floor(preciseAge);
+  const detailedAge = preciseAge;
+
+  const ageElement = document.getElementById('age');
+  ageElement.textContent = `${integerAge} (${detailedAge.toFixed(3)})`;
+});
