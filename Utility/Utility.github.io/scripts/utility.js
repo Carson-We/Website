@@ -132,6 +132,16 @@ function calculatePi() {
   document.getElementById("piresult").innerHTML = pi.toFixed(decimalPlaces);
 }
 
+function getPi() {
+  var decimalPlaces = parseInt(document.getElementById("decimal-places").value);
+
+  var charactersToShow = decimalPlaces + 1;
+
+  var piValue = Math.PI.toFixed(decimalPlaces).slice(0, charactersToShow);
+
+  document.getElementById("piresult").innerHTML = piValue;
+}
+
 function generateRandomCode() {
   var length = parseInt(document.getElementById("length").value);
   var characters = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()-_+={}[]|:;.,?/~`";
