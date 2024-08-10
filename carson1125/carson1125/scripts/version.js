@@ -1,1 +1,0 @@
-document.getElementById("version").textContent = "v1.1.4.0(1140250624r)";

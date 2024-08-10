@@ -1,5 +1,12 @@
 var blogs = [
   {
+    title: "GitHub Sponsors",
+    subtitle: "Technical blog about GitHub Sponsors",
+    author: "Carson Wu",
+    date: "10 August 2024",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/August/10_08_2024/GHS.md"
+  },
+  {
     title: "Utility-beta.github.io",
     subtitle: "Technical blog about Utility-beta.github.io Scheduled Events",
     author: "Carson Wu",
@@ -45,6 +52,13 @@ var blogs = [
 
 var blogs_zh = [
   {
+    title: "GitHub Sponsors",
+    subtitle: "有關 GitHub Sponsors 的技術部落格",
+    author: "Carson Wu",
+    date: "2024年8月10日",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/August/10_08_2024/GHS_zh.md"
+  },
+  {
     title: "Utility-beta.github.io",
     subtitle: "有關 Utility-beta.github.io 預定活動的技術部落格",
     author: "Carson Wu",
@@ -89,6 +103,13 @@ var blogs_zh = [
 ];
 
 var blogs_kr = [
+  {
+    title: "GitHub Sponsors",
+    subtitle: "有關 GitHub Sponsors 관한 기술 블로그",
+    author: "Carson Wu",
+    date: "2024년 8월 10일",
+    link: "https://github.com/Carson-We/Documentation/blob/main/Blog/2024/August/10_08_2024/GHS_kr.md"
+  },
   {
     title: "Utility-beta.github.io",
     subtitle: "Utility-beta.github.io 예정된 이벤트에 대한 기술 블로그",
