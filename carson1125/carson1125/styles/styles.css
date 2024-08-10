@@ -251,6 +251,12 @@ footer {
     overflow: hidden;
   }
 
+    #stm-iframe {
+        width: 100%;
+        border: none;
+        overflow: hidden;
+    }
+    
     #ghs-iframe {
     height: 32px;
     width: 114px;
