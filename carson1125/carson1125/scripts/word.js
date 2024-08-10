@@ -1,6 +1,6 @@
 var versionElements = document.getElementsByClassName("version");
 for (var i = 0; i < versionElements.length; i++) {
-  versionElements[i].textContent = "v1.1.6.4(023)(1163_023-110824r)";
+  versionElements[i].textContent = "v1.1.6.5(024)(1165_024-110824r)";
 }
 
 var crElements = document.getElementsByClassName("cr");
