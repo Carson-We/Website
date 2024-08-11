@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
+    <script src="scripts/utillty.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>Clock | Carson Utility</title>
+</head>
+<body>
+  <header>
+    <h1 class="cw" onclick="goToHomePage()">Carson <span class="gradient-text">Utility</span></h1>
+    <div class="dropdown">
+        <button class="dropdown-btn btn dropbtn">🌍</button>
+        <ul class="dropdown-content">
+          <li><a href="clock_zh.html">中文</a></li>
+          <li><a href="clock.html">Eng</a></li>
+          <li><a href="clock_kr.html">한글</a></li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="menu">
+            <li><a href="https://carson-we.github.io/Website/carson1125/carson1125/about.html" target="_blank">About</a></li>
+            <li><a href="https://carson-we.github.io/Website/carson1125/carson1125/Blog.html" target="_blank">Blog</a></li>
+            <li><a href="https://carson-we.github.io/Website/carson1125/carson1125/contact.html" target="_blank">Contact</a></li>
+            <li><a href="utility.html" target="_blank">Utillty</a></li>
+        </ul>
+      </nav>
+</header>
+    <div class="container">
+        <h1>Clock</h1>
+        <div class="stm-container">
+            <div>
+                <h3>Current UTC time:</h3>
+                <div id="utc-time"></div>
+            </div>
+            <div>
+                <h3>Current local time:</h3>
+                <div id="local-time"></div>
+            </div>
+        </div>
+        <div>
+            <h3>Stopwatch</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Stopwatch 1</h3>
+                    <p id="timer-display1"></p>
+                    <button id="start-btn-1" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-1" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+                  <div class="card">
+                    <h3>Stopwatch 2</h3>
+                    <p id="timer-display2"></p>
+                    <button id="start-btn-2" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-2" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+                  <div class="card">
+                    <h3>Stopwatch 3</h3>
+                    <p id="timer-display3"></p>
+                    <button id="start-btn-3" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-3" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+                  <div class="card">
+                    <h3>Stopwatch 4</h3>
+                    <p id="timer-display4"></p>
+                    <button id="start-btn-4" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-4" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+                  <div class="card">
+                    <h3>Stopwatch 5</h3>
+                    <p id="timer-display5"></p>
+                    <button id="start-btn-5" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-5" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+                  <div class="card">
+                    <h3>Stopwatch 6</h3>
+                    <p id="timer-display6"></p>
+                    <button id="start-btn-6" class="btn btn1 btn-start">Start</button>
+                    <button id="stop-btn-6" class="btn btn1 btn-stop" disabled>Stop</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span id="version"></span></p>
+    </footer>
+    <script src="scripts/word.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+</html>

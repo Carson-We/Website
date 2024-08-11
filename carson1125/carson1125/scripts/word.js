@@ -1,16 +1,11 @@
 var versionElements = document.getElementsByClassName("version");
 for (var i = 0; i < versionElements.length; i++) {
-  versionElements[i].textContent = "v1.1.6.5(024)(1165_024-110824r)";
+  versionElements[i].textContent = "v1.1.6.6(025)(1166_025-120824r)";
 }
 
 var crElements = document.getElementsByClassName("cr");
 for (var i = 0; i < crElements.length; i++) {
   crElements[i].textContent = "Copyright © 2023-2024 Carson Wu. All rights reserved.";
-}
-
-var crKrElements = document.getElementsByClassName("crkr");
-for (var i = 0; i < crKrElements.length; i++) {
-  crKrElements[i].textContent = "Copyright © 2023-2024 Carson Wu 모든 권리 보유.";
 }
 
 var crZhElements = document.getElementsByClassName("crzh");

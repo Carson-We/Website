@@ -30,14 +30,6 @@ function goToHomePagekr() {
     window.location.href = "index_kr.html";
 }
 
-function goToCRkr() {
-    window.location.href = "li_kr.html";
-}
-
-function goToVEkr() {
-    window.location.href = "ve_kr.html";
-}
-
 window.addEventListener('DOMContentLoaded', function() {
     var dropdownButton = document.querySelector('.dropbtn');
     var dropdownContent = document.querySelector('.dropdown-content');

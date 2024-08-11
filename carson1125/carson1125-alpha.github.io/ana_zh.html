@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_zh.js"></script>
+    <script src="scripts/bw.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>A.N.A. | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ana_zh.html">中文</a></li>
+                <li><a href="ana.html">English</a></li>
+                <li><a href="ana_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><a href="about_zh.html" target="_blank">關於</a></li>
+              <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+              <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+              <li><a href="project_zh.html" target="_blank">專案</a></li>
+            </ul>
+          </nav> 
+    </header>
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">A.N.A.</h1>
+            <li style="margin-left: auto;"><a href="ana_zh.html" target="_blank">概覽</a></li>
+            <li style="margin-left: auto;"><a href="ana-ios_zh.html" target="_blank">A.N.A. Mobile</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="container">
+                <h1>關於此項目</h1>
+                <img src="images/ana.png" alt="A.N.A. 的圖示" style="display: block; margin: 0 auto; width: 200px; height: 200px; border-radius: 10%;">
+                <p>A.N.A.（自主神經化身）： 是一種最先進的技術，旨在創建自己的數位複製品或化身。 這個創新系統利用先進的演算法和機器學習技術來產生栩栩如生的互動式數位克隆。 透過 A.N.A.，使用者可以個性化他們的化身，複製他們的外表、行為，甚至個性特徵。 這項突破性的技術為虛擬通訊、娛樂和自我表達開闢了可能性。</p>
+                <p><i><b>A.N.A. 將於明年第二季推出。</b></i></p>
+                <p>運行平台: /</p>
+                <p>編程語言: /</p>
+                <p>原始碼模式：開源 -- <a href="https://github.com/Carson-We/iOS-app/tree/main/A.N.A.">GitHub</a></p>
+             </div>
+             <footer>
+                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+                <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+            </footer>
+            <script src="scripts/version.js"></script>
+            <script src="scripts/cr_zh.js"></script>
+            <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>

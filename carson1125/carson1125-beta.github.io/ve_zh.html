@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_zh.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <title>VERSION | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="ve_zh.html">中文</a></li>
+                <li><a href="ve.html">English</a></li>
+                <li><a href="ve_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <button style="display: flex; justify-content: center; position: absolute; top: 20px; left: 40%; max-width: 20px; cursor: pointer;" class="dropdown-btn1 btn1 dropbtn1 menu-icon">
+              <span>&#9776;</span>
+              <span class="arrow"></span>
+          </button>
+          <ul style="top: 45px; left: 29%; " class="dropdown-content1">
+              <li><a href="about_zh.html">關於</a></li>
+              <li><a href="Blog_zh.html">部落格</a></li>
+              <li><a href="contact_zh.html">聯絡</a></li>
+              <li><a href="project_zh.html">專案</a></li>
+          </ul>
+      </div>
+      <nav>
+          <ul class="menu">
+            <li><a href="about_zh.html" target="_blank">關於</a></li>
+            <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+            <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+            <li><a href="project_zh.html" target="_blank">專案</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+        <div class="container">
+            <ol>
+                <li>
+                  <strong>軟體版本階段說明：</strong>
+                  <ol type="a">
+                    <li>開發版（Alpha）：此版本表示軟體尚處於開發初期，主要集中在實現軟體功能，通常僅在軟體開發者內部使用。該版本可能存在較多的錯誤和缺陷，需要進一步修改。</li>
+                    <li>測試版（Beta）：相對於Alpha版，測試版已有顯著的改進，消除了嚴重的錯誤，但仍可能存在一些缺陷，需要進行測試和反饋以進一步改進。</li>
+                    <li>RC 版（Release Candidate）：RC 版是在測試版之後的一個重要階段，表示軟體已經進入最終測試階段，並且可能成為正式版的候選版本。在此階段，軟體通常已經消除了大部分已知的錯誤和缺陷，並且符合預期的功能和品質要求。</li>
+                    <li>穩定版（Stable）：該版本表示軟體已經相對穩定，大部分錯誤和缺陷已經修復，但仍可能存在少量較小的問題。</li>
+                    <li>正式版（Release）：該版本為最終版本，已經經過全面測試和驗證，並且用戶可正常使用。</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong>版本編號及命名規範：</strong>
+                  <ol type="a">
+                    <li>
+                        軟體版本編號由四個部分組成，第一個1為主版本號，第二個1為子版本號，第三個1為階段版本號，第四部分為日期版本號加希臘字母版本號，希臘 字母版號共有4種，分別為：a, b, rc, r ，例如：111011223r。
+                      <ol type="i">
+                        <li>主版本號（1）：當軟體進行重大功能更改或架構調整時，增加主版本號。</li>
+                        <li>次版本號（1）：當軟體進行功能增加或修改時，增加次版本號。</li>
+                        <li>階段版本號（1）：一般用於修復錯誤、改進性能或進行小的改動，增加階段版本號。</li>
+                        <li>希臘字母版本號（r）：此版本號用於標註目前版本的軟體處於哪個開發階段，當軟體進入到另一個階段時需要修改此版本號。</li>
+                        <li>日期版本號（011223）：用於記錄修改項目的當前日期，每天對項目的修改都需要更改日期版本號。</li>
+                      </ol>
+                    </li>
+                    <li>
+                        軟體版本號由三個部分組成，第一個1為主版本號，第二個1為子版本號，第三個1為階段版本號，例如：v1.1.1.。
+                        <ol type="i">
+                          <li>主版本號(1)：當軟體進行重大功能更改或架構調整時，增加主版本號。</li>
+                          <li>次版本號(1)：當軟體進行功能增加或修改時，增加次版本號。</li>
+                          <li>階段版本號（1）：一般用於修復錯誤、改進性能或進行小的改動，增加階段版本號。</li>
+                          <li>修訂版本號(1)：一般用於修復錯誤、改進性能或進行小的改動，增加修訂版本號。</li>
+                        </ol>
+                      </li>
+                  </ol>
+                </li>
+              </ol>
+        </div>
+
+        <footer>
+          <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+          <p style="cursor: pointer;" onclick="goToVE()">版本: <span id="version"></span></p>
+      </footer>
+      <script src="scripts/version.js"></script>
+      <script src="scripts/cr_zh.js"></script>
+      <iframe id="bottom-iframe" src="sitemap-b_zh.html"></iframe>
+</body>
+</html>
