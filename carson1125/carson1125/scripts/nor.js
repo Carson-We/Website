@@ -6,6 +6,14 @@ function goToHomePage() {
     window.location.href = "index.html";
 }
 
+function goToCUHomePage() {
+  window.location.href = "ut-index.html";
+}
+
+function goToCAHomePage() {
+  window.location.href = "ca-index.html";
+}
+
 function goToCR() {
     window.location.href = "li.html";
 }
@@ -26,9 +34,10 @@ function goToVEzh() {
     window.location.href = "ve_zh.html";
 }
 
-function goToHomePagekr() {
-    window.location.href = "index_kr.html";
+function goToCUHomePage() {
+  window.location.href = "ut-indexe_zh.html";
 }
+
 
 window.addEventListener('DOMContentLoaded', function() {
     var dropdownButton = document.querySelector('.dropbtn');
@@ -124,3 +133,40 @@ document.addEventListener('DOMContentLoaded', function () {
   const ageElement = document.getElementById('age');
   ageElement.textContent = `${integerAge} (${detailedAge.toFixed(3)})`;
 });
+
+function login() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  fetch("login.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "username=" + username + "&password=" + password
+  })
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("message").innerText = data.message;
+    })
+    .catch(error => {
+      alert("Error: " + error);
+    });
+}
+
+function signup() {
+  fetch("register.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "username=&name=&password=&email="
+  })
+    .then(response => response.json())
+    .then(data => {
+      alert(data.message);
+    })
+    .catch(error => {
+      alert("Error: " + error);
+    });
+}
