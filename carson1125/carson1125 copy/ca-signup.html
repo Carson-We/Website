@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor.js"></script>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>Register | Carson Wu</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cw" onclick="goToCAHomePage()">Carson <span class="ca-gradient-text">Account</span></h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">🌍</button>
+            <ul class="dropdown-content">
+                <li><a href="ca-index.html">Eng</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Carson Account</h1>
+        <div class="ca-frame">
+            <h2>Register</h2>
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="name">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="username">email:</label>
+                <input type="text" id="email">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <br>
+                <button class="btn btn1" onclick="signUp()">Register</button>
+                <p id="validationMessage"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
+    </footer>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+</body>
+
+</html>
