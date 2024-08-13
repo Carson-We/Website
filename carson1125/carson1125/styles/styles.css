@@ -376,3 +376,13 @@ input[type="submit"]:hover {
   padding: 5px;
   box-sizing: border-box;
 }
+
+.gradient-text {
+  color: #0366d6;
+  cursor: pointer;
+}
+
+.ca-gradient-text {
+  color: #7403d6;
+  cursor: pointer;
+}

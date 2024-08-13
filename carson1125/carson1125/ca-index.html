@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1 class="cw" onclick="goToCAHomePage()">Carson Account</h1>
+        <h1 class="cw" onclick="goToCAHomePage()">Carson <span class="ca-gradient-text">Account</span></h1>
         <div class="dropdown">
             <button class="dropdown-btn btn dropbtn">🌍</button>
             <ul class="dropdown-content">
@@ -29,23 +29,17 @@
         </nav>
     </header>
     <div class="container">
-        <h1>Carson Account</h1>
-        <div class="ca-frame">
-            <h2>Login</h2>
-            <div class="input-container">
-                <input type="text" id="username" placeholder="Username">
-                <input type="password" id="password" placeholder="Password">
-                <button class="btn btn1" onclick="login()">Login</button>
-                <button class="btn btn1" onclick="window.open('ca-signup.html', '_blank')">Register</button>
-            </div>
-            <p id="message"></p>
-        </div>
+        <h1>Welcome to the era of Carson Account</h1>
+        <p>With a Carson Account, you can access all Carson services.</p>
+        <p>Log in to manage your account.</p>
+        <button class="btn btn1" onclick="window.open('ca-ca-signin.html', '_blank')">Login</button>
+        <p>Number of Registered Users: <span id="registeredUsersCount"></span></p>
+        <ul id="userList"></ul>
     </div>
     <footer>
         <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
         <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
     </footer>
-    <script src="scripts/word.js"></script>
     <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 

@@ -7,7 +7,7 @@
     <script src="scripts/nor.js"></script>
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon" />
-    <title>Register | Carson Wu</title>
+    <title>Carson Account | Carson Wu</title>
 </head>
 
 <body>
@@ -31,21 +31,14 @@
     <div class="container">
         <h1>Carson Account</h1>
         <div class="ca-frame">
-            <h2>Register</h2>
+            <h2>Login</h2>
             <div class="input-container">
-                <label for="username">Username:</label>
-                <input type="text" id="name">
-                <label for="username">Username:</label>
-                <input type="text" id="username">
-                <label for="username">email:</label>
-                <input type="text" id="email">
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password">
-                <br>
-                <button class="btn btn1" onclick="validateRegistration()">Register</button>
-                <p id="validationMessage"></p>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button class="btn btn1" onclick="login()">Login</button>
+                <button class="btn btn1" onclick="window.open('ca-signup.html', '_blank')">Register</button>
             </div>
+            <p id="message"></p>
         </div>
     </div>
     <footer>
