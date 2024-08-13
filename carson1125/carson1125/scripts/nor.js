@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.11(030)(11610_030-140824r)";
+    versionElements[i].textContent = "v1.1.6.12(031)(11612_031-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
   ageElement.textContent = `${integerAge} (${detailedAge.toFixed(3)})`;
 });
 
-console.log(userDetails);
 
 document.getElementById("registeredUsersCount").textContent = Object.keys(userDetails).length;
 
