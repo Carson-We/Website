@@ -169,14 +169,15 @@ document.addEventListener('DOMContentLoaded', function () {
 async function login(username, savedPassword) {
   const enteredUsername = document.getElementById('enteredUsername').value;
   const enteredPassword = document.getElementById('enteredPassword').value;
+  const storedUserData = JSON.parse(localStorage.getItem('userData'));
 
   const encoder = new TextEncoder();
   const data = encoder.encode(enteredPassword);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashedPassword = arrayBufferToBase64(hashBuffer);
 
-  if (username === enteredUsername && savedPassword === hashedPassword) {
-    alert('Login successful! Welcome, ' + username);
+  if (storedUserData && enteredUsername === storedUserData.username && enteredPassword === storedUserData.password) {
+    alert('Login successful! Welcome, ' + storedUserData.username);
   } else {
     alert('Login failed. Please check your username and password.');
   }
