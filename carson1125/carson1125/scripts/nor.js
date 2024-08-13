@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.23(043)(11623_043-140824r)";
+    versionElements[i].textContent = "v1.1.6.24(044)(11624_044-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -175,6 +175,8 @@ async function login(username, savedPassword) {
   const data = encoder.encode(enteredPassword);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashedPassword = arrayBufferToBase64(hashBuffer);
+
+  console.log('Hashed Password:', hashedPassword);
 
   if (storedUserData && enteredUsername === storedUserData.username && enteredPassword === storedUserData.password) {
     alert('Login successful! Welcome, ' + storedUserData.username);
