@@ -128,3 +128,56 @@ document.addEventListener('DOMContentLoaded', function () {
   ageElement.textContent = `${integerAge} (${detailedAge.toFixed(3)})`;
 });
 
+
+async function signUp() {
+  const name = document.getElementById('name').value;
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  const encoder = new TextEncoder();
+  const data = encoder.encode(password);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashedPassword = arrayBufferToBase64(hashBuffer);
+
+  const userData = { name, username, email, password: hashedPassword };
+  localStorage.setItem('userData', JSON.stringify(userData));
+
+  console.log('User signed up successfully!');
+}
+
+function arrayBufferToBase64(buffer) {
+  var binary = '';
+  var bytes = new Uint8Array(buffer);
+  var len = bytes.byteLength;
+  for (var i = 0; i < len; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return window.btoa(binary);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const userData = localStorage.getItem('userData');
+
+  if (userData) {
+    const parsedUserData = JSON.parse(userData);
+    const savedUsername = parsedUserData.username;
+    const savedPassword = parsedUserData.password;
+  }
+});
+
+async function login(username, savedPassword) {
+  const enteredUsername = prompt('Enter your username:');
+  const enteredPassword = prompt('Enter your password:');
+
+  const encoder = new TextEncoder();
+  const data = encoder.encode(enteredPassword);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashedPassword = arrayBufferToBase64(hashBuffer);
+
+  if (username === enteredUsername && savedPassword === hashedPassword) {
+    alert('Login successful! Welcome, ' + username);
+  } else {
+    alert('Login failed. Please check your username and password.');
+  }
+}
