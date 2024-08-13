@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.22(042)(11622_042-140824r)";
+    versionElements[i].textContent = "v1.1.6.23(043)(11623_043-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -167,7 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 async function login(username, savedPassword) {
-
   const enteredUsername = document.getElementById('enteredUsername').value;
   const enteredPassword = document.getElementById('enteredPassword').value;
 
