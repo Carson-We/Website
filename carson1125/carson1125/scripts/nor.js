@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.10(029)(11610_029-140824r)";
+    versionElements[i].textContent = "v1.1.6.11(030)(11610_030-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -195,13 +195,13 @@ async function signUp() {
 
   const validation = validateUsernameAndPasswordForRegistration(username, password);
 
-  if (validation.isValid) {
+  if (validation) {
     const userId = generateUserId();
     saveUserData(username, userId, name, email);
-    await registerUser(username, userId); 
+    await registerUser(username, userId);
     console.log("User registration successful.");
   } else {
-    console.log("User registration failed: " + validation.message);
+    console.log("User registration failed: " + validation);
   }
 
   async function checkUserExistence(username, userId, userData) {
