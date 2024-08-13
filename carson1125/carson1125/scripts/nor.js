@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.26(046)(11626_046-140824r)";
+    versionElements[i].textContent = "v1.1.6.27(047)(11627_0467-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -166,22 +166,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-async function login(username, savedPassword) {
+async function login() {
   const enteredUsername = document.getElementById('enteredUsername').value;
-  const enteredPassword = document.getElementById('enteredPassword').value;
   const storedUserData = JSON.parse(localStorage.getItem('userData'));
 
-  const encoder = new TextEncoder();
-  const data = encoder.encode(enteredPassword);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-  const hashedPassword = arrayBufferToBase64(hashBuffer);
-
-  console.log('Hashed Password:', hashedPassword);
-
-  if (storedUserData && enteredUsername === storedUserData.username && enteredPassword === storedUserData.password) {
+  if (storedUserData && enteredUsername === storedUserData.username && enteredPasswordHash === storedUserData.password) {
     alert('Login successful! Welcome, ' + storedUserData.username);
   } else {
     alert('Login failed. Please check your username and password.');
-    console.log('Hashed Password:', hashedPassword);
   }
 }
