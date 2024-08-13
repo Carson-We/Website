@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.27(047)(11627_0467-140824r)";
+    versionElements[i].textContent = "v1.1.6.28(048)(11628_048-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -168,11 +168,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function login() {
   const enteredUsername = document.getElementById('enteredUsername').value;
+  const enteredPassword = document.getElementById('enteredPassword').value;
   const storedUserData = JSON.parse(localStorage.getItem('userData'));
 
-  if (storedUserData && enteredUsername === storedUserData.username && enteredPasswordHash === storedUserData.password) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(enteredPassword);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashedPassword = arrayBufferToBase64(hashBuffer);
+
+  if (storedUserData && enteredUsername === storedUserData.username && hashedPassword === storedUserData.password) {
     alert('Login successful! Welcome, ' + storedUserData.username);
   } else {
     alert('Login failed. Please check your username and password.');
   }
+}
+
+function arrayBufferToBase64(buffer) {
+  var binary = '';
+  var bytes = new Uint8Array(buffer);
+  var len = bytes.byteLength;
+  for (var i = 0; i < len; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return window.btoa(binary);
 }
