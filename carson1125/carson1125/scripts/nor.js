@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.25(045)(11625_045-140824r)";
+    versionElements[i].textContent = "v1.1.6.26(046)(11626_046-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -140,7 +140,7 @@ async function signUp() {
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashedPassword = arrayBufferToBase64(hashBuffer);
 
-  const userData = { name, username, email, password: hashedPassword };
+  const userData = { name, username, email, password};
   localStorage.setItem('userData', JSON.stringify(userData));
 
   console.log('User signed up successfully!');
