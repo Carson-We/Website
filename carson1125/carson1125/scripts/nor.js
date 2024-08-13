@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.24(044)(11624_044-140824r)";
+    versionElements[i].textContent = "v1.1.6.25(045)(11625_045-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -182,5 +182,6 @@ async function login(username, savedPassword) {
     alert('Login successful! Welcome, ' + storedUserData.username);
   } else {
     alert('Login failed. Please check your username and password.');
+    console.log('Hashed Password:', hashedPassword);
   }
 }
