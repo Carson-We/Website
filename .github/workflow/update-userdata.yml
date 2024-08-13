@@ -1,0 +1,26 @@
+name: Update User Data
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    permissions:
+    contents: write
+    pages: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update User Data
+      run: |
+        git config user.email "topics.copilot0n@icloud.com"
+        git config user.name "Carson-We"
+        git add .
+        git commit -m "Update user data"
+        git push
