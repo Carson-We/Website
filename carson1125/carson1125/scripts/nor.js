@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.38(058)(11638_058-140824r)";
+    versionElements[i].textContent = "v1.1.6.39(059)(11639_059-150824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -129,100 +129,38 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-async function signUp() {
-  const name = document.getElementById('name').value;
-  const username = document.getElementById('username').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
+function handleGithubCallback() {
+  const githubUser = Socialite.driver('github').user();
+  const user = User.where('github_id', githubUser.id).first();
 
-  const encoder = new TextEncoder();
-  const data = encoder.encode(password);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-  const hashedPassword = arrayBufferToBase64(hashBuffer);
+  if (auth().check()) {
+    const currentUser = auth().user();
 
-  const userData = { name, username, email, password};
-  localStorage.setItem('userData', JSON.stringify(userData));
-
-  updateUserToGitHub();
-
-  console.log('User signed up successfully!');
-}
-
-function arrayBufferToBase64(buffer) {
-  var binary = '';
-  var bytes = new Uint8Array(buffer);
-  var len = bytes.byteLength;
-  for (var i = 0; i < len; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return window.btoa(binary);
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  const userData = localStorage.getItem('userData');
-
-  if (userData) {
-    const parsedUserData = JSON.parse(userData);
-    const savedUsername = parsedUserData.username;
-    const savedPassword = parsedUserData.password;
-  }
-});
-
-async function login() {
-  const enteredUsername = document.getElementById('enteredUsername').value;
-  const enteredPassword = document.getElementById('enteredPassword').value;
-  const storedUserData = JSON.parse(localStorage.getItem('userData'));
-
-  const encoder = new TextEncoder();
-  const data = encoder.encode(enteredPassword);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-  const hashedPassword = arrayBufferToBase64(hashBuffer);
-
-  if (storedUserData && enteredUsername === storedUserData.username && hashedPassword === storedUserData.password) {
-    alert('Login successful! Welcome, ' + storedUserData.username);
-  } else {
-    alert('Login failed. Please check your username and password.');
-  }
-}
-
-function arrayBufferToBase64(buffer) {
-  var binary = '';
-  var bytes = new Uint8Array(buffer);
-  var len = bytes.byteLength;
-  for (var i = 0; i < len; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return window.btoa(binary);
-}
-
-const userData = JSON.parse(localStorage.getItem('userData'));
-
-function updateUserToGitHub(userData) {
-  const token = 'ghp_0C5¡jtnIiS6UVP8KDAv6c6jWUF1fQU4Gd4BC';
-  const fileContent = {
-    name: "userData.json",
-    content: btoa(JSON.stringify(userData))
-  };
-  const url = 'https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json?ref=main';
-
-  fetch(url, {
-    method: 'PUT',
-    headers: {
-      'Authorization': `token ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(fileContent),
-  })
-    .then(response => {
-      if (response.ok) {
-        console.log('File uploaded successfully.');
+    if (currentUser.github_id) {
+      if (currentUser.github_id === githubUser.id) {
+        return redirect(this.redirect);
       } else {
-        throw new Error(`Failed to upload file: ${response.statusText}`);
+        return redirect(this.redirect).withErrors('Sorry, you have bound a different GitHub account!');
       }
-    })
-    .catch(error => {
-      console.error('Error uploading file:', error);
-    });
+    } else {
+      if (user) {
+        return redirect(this.redirect).withErrors('Sorry, this GitHub account has been bound to another account. Is that you?');
+      } else {
+        if (this.bindGithub(currentUser, this.getDataFromGithubUser(githubUser))) {
+          return redirect(this.redirect).with('success', 'Successfully bound GitHub');
+        } else {
+          return redirect(this.redirect).withErrors('Failed to bind GitHub');
+        }
+      }
+    }
+  } else {
+    if (user) {
+      auth().loginUsingId(user.id);
+      return redirect(this.redirect).with('success', 'Login successful');
+    } else {
+      const githubData = this.getDataFromGithubUser(githubUser);
+      session().put('githubData', githubData);
+      return redirect().route('github.register');
+    }
+  }
 }
-
-updateUserToGitHub(userData);
