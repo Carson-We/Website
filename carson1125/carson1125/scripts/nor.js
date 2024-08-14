@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.36(056)(11636_056-140824r)";
+    versionElements[i].textContent = "v1.1.6.37(057)(11637_057-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -195,7 +195,9 @@ function arrayBufferToBase64(buffer) {
   return window.btoa(binary);
 }
 
-function updateUserToGitHub() {
+const userData = JSON.parse(localStorage.getItem('userData'));
+
+function updateUserToGitHub(userData) {
   const token = 'ghp_0C5¡jtnIiS6UVP8KDAv6c6jWUF1fQU4Gd4BC';
   const fileContent = {
     name: "userData.json",
@@ -215,7 +217,7 @@ function updateUserToGitHub() {
       if (response.ok) {
         console.log('File uploaded successfully.');
       } else {
-        console.error('Failed to upload file:', response.statusText);
+        throw new Error(`Failed to upload file: ${response.statusText}`);
       }
     })
     .catch(error => {
@@ -223,4 +225,4 @@ function updateUserToGitHub() {
     });
 }
 
-updateUserToGitHub();
+updateUserToGitHub(userData);
