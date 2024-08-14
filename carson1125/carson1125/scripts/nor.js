@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.35(055)(11635_055-140824r)";
+    versionElements[i].textContent = "v1.1.6.36(056)(11636_056-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -196,36 +196,31 @@ function arrayBufferToBase64(buffer) {
 }
 
 function updateUserToGitHub() {
-  const xhr = new XMLHttpRequest();
-  const url = 'https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json';
   const token = 'ghp_0C5¡jtnIiS6UVP8KDAv6c6jWUF1fQU4Gd4BC';
-  const sha = 'c90ab212482555373865f2f4eb3541736b92dbd0';
-
-  xhr.open('PUT', url, true);
-  xhr.setRequestHeader('Authorization', `token ${token}`);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-
-  xhr.onload = function () {
-    if (xhr.status >= 200 && xhr.status < 300) {
-      const data = JSON.parse(xhr.responseText);
-      console.log('File updated successfully:', data);
-    } else {
-      console.error('Error updating file:', xhr.statusText);
-    }
+  const fileContent = {
+    name: "userData.json",
+    content: btoa(JSON.stringify(userData))
   };
+  const url = 'https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json';
 
-  xhr.onerror = function () {
-    console.error('Error updating file:', xhr.statusText);
-  };
-
-  const updatedData = JSON.parse(localStorage.getItem('userData'));
-  const requestBody = JSON.stringify({
-    message: 'Update userData.json',
-    content: btoa(JSON.stringify(updatedData)),
-    sha: sha
-  });
-
-  xhr.send(requestBody);
+  fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(fileContent),
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('File uploaded successfully.');
+      } else {
+        console.error('Failed to upload file:', response.statusText);
+      }
+    })
+    .catch(error => {
+      console.error('Error uploading file:', error);
+    });
 }
 
 updateUserToGitHub();
