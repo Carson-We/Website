@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.31(051)(11631_051-140824r)";
+    versionElements[i].textContent = "v1.1.6.32(052)(11632_052-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
