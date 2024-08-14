@@ -1,0 +1,23 @@
+{
+  "name": "carson1125",
+  "homepage": "https://carson-we.github.io/Website/carson1125/carson1125/",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "^3.0.1"
+  }
+}

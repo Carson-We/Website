@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.29(049)(11629_049-140824r)";
+    versionElements[i].textContent = "v1.1.6.30(050)(11630_050-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -33,11 +33,11 @@ function goToCAHomePage() {
 }
 
 function goToCR() {
-  window.location.href = "https://github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/li.md";
+  window.location.href = "https:github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/li.md";
 }
 
 function goToVE() {
-  window.location.href = "https://github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/ve.md";
+  window.location.href = "https:github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/ve.md";
 }
 
 function goToHomePagezh() {
@@ -45,11 +45,11 @@ function goToHomePagezh() {
 }
 
 function goToCRzh() {
-  window.location.href = "https://github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/li_zh.md";
+  window.location.href = "https:github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/li_zh.md";
 }
 
 function goToVEzh() {
-  window.location.href = "https://github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/ve_zh.md";
+  window.location.href = "https:github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/ve_zh.md";
 }
 
 function goToCUHomePage() {
@@ -192,3 +192,57 @@ function arrayBufferToBase64(buffer) {
   }
   return window.btoa(binary);
 }
+
+function loadFirebaseScript(callback) {
+  var script = document.createElement('script');
+  script.onload = callback;
+  script.src = 'https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js';
+  document.head.appendChild(script);
+
+  script.onload = function () {
+    var firestoreScript = document.createElement('script');
+    firestoreScript.src = 'https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js';
+    document.head.appendChild(firestoreScript);
+  };
+}
+
+
+loadFirebaseScript(function () {
+  const firebaseConfig = {
+    apiKey: "AIzaSyCtEmmk5YMNBnGE2hstMdHYI9UR0Lh0ZI0",
+    authDomain: "carson1125-d4627.firebaseapp.com",
+    projectId: "carson1125-d4627",
+    storageBucket: "carson1125-d4627.appspot.com",
+    messagingSenderId: "213530312673",
+    appId: "1:213530312673:web:d45f9c7e1697c4652d1ca0",
+    measurementId: "G-77ENNQS7PL"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  db.collection("userData").doc("DOCUMENT_ID").get()
+    .then((doc) => {
+      if (doc.exists) {
+
+        const existingData = doc.data().data;
+
+        const newData = existingData + " | New data to append";
+
+        db.collection("userData").doc("DOCUMENT_ID").update({
+          data: newData
+        })
+          .then(() => {
+            console.log("Data appended successfully!");
+          })
+          .catch((error) => {
+            console.error("Error appending data: ", error);
+          });
+      } else {
+        console.log("Document does not exist");
+      }
+    })
+    .catch((error) => {
+      console.error("Error getting document: ", error);
+    });
+});
