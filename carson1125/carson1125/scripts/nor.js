@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.37(057)(11637_057-140824r)";
+    versionElements[i].textContent = "v1.1.6.38(058)(11638_058-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -203,7 +203,7 @@ function updateUserToGitHub(userData) {
     name: "userData.json",
     content: btoa(JSON.stringify(userData))
   };
-  const url = 'https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json';
+  const url = 'https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json?ref=main';
 
   fetch(url, {
     method: 'PUT',
