@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var versionElements = document.getElementsByClassName("version");
   for (var i = 0; i < versionElements.length; i++) {
-    versionElements[i].textContent = "v1.1.6.33(053)(11633_053-140824r)";
+    versionElements[i].textContent = "v1.1.6.34(054)(11634_054-140824r)";
   }
 
   var crElements = document.getElementsByClassName("cr");
@@ -143,6 +143,8 @@ async function signUp() {
   const userData = { name, username, email, password};
   localStorage.setItem('userData', JSON.stringify(userData));
 
+  updateUserToGitHub();
+
   console.log('User signed up successfully!');
 }
 
@@ -193,35 +195,39 @@ function arrayBufferToBase64(buffer) {
   return window.btoa(binary);
 }
 
-fetch('https://raw.githubusercontent.com/Carson-We/Website/main/carson1125/carson1125/userData.json')
-  .then(response => response.json())
-  .then(data => {
-    localStorage.setItem('userData', JSON.stringify(data));
+function updateUserToGitHub() {
+  fetch('https://raw.githubusercontent.com/Carson-We/Website/main/carson1125/carson1125/userData.json')
+    .then(response => response.json())
+    .then(data => {
+      localStorage.setItem('userData', JSON.stringify(data));
 
-    const userData = JSON.parse(localStorage.getItem('userData'));
-    userData.users.push(newUser);
-    localStorage.setItem('userData', JSON.stringify(userData));
+      const userData = JSON.parse(localStorage.getItem('userData'));
+      userData.users.push(newUser);
+      localStorage.setItem('userData', JSON.stringify(userData));
 
-    const updatedData = JSON.parse(localStorage.getItem('userData'));
+      const updatedData = JSON.parse(localStorage.getItem('userData'));
 
-    fetch('https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json', {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'ghp_0C5¡jtnIiS6UVP8KDAv6c6jWUF1fQU4Gd4BC',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        message: 'Update userData.json',
-        content: btoa(JSON.stringify(updatedData)),
-        sha: 'SHA_OF_EXISTING_FILE'
+      fetch('https://api.github.com/repos/Carson-We/Website/contents/carson1125/carson1125/userData.json', {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'ghp_0C5¡jtnIiS6UVP8KDAv6c6jWUF1fQU4Gd4BC',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: 'Update userData.json',
+          content: btoa(JSON.stringify(updatedData)),
+          sha: 'SHA_OF_EXISTING_FILE'
+        })
       })
+        .then(response => response.json())
+        .then(data => {
+          console.log('File updated successfully:', data);
+        })
+        .catch(error => {
+          console.error('Error updating file:', error);
+        });
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log('File updated successfully:', data);
-      })
-      .catch(error => {
-        console.error('Error updating file:', error);
-      });
-  })
-  .catch(error => console.error('Error fetching JSON:', error));
+    .catch(error => console.error('Error fetching JSON:', error));
+}
+
+updateUserToGitHub();
