@@ -1,47 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script src="scripts/nor.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/nor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon"/>
-    <title>ABOUT | Carson Wu</title>
+    <title>About | Carson Wu</title>
 </head>
 <body>
-    <header>
-        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
-        <div class="dropdown">
-        <button class="dropdown-btn btn dropbtn">🌍</button>
-            <ul class="dropdown-content">
-              <li><a href="about_zh.html">中文</a></li>
-              <li><a href="about.html">Eng</a></li>
-            </ul>
-          </div>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="Blog.html" target="_blank">Blog</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-                <li><a href="project.html" target="_blank">Project</a></li>
-            </ul>
-          </nav>
-    </header>
-    <div class="container">
-           <h1>About Me</h1>
-           <p>Software development is a creative craft, and I see myself as a masterful artist, weaving brilliance with every stroke of code. - Carson Wu, the Extraordinary Developer.</p>
-           <p>I am Carson Wu, a talented young prodigy from Hong Kong specializing in the fascinating fields of Artificial Intelligence (AI) and Machine Learning (ML). Despite the perceived complexity of software development, I approach it with a mindset of awe and imagination, considering each line of code as a stroke of brilliance I use to create extraordinary things.</p>
-           <p>From a young age, I became enthralled by technology and its boundless possibilities. Fueled by curiosity and determination, I immersed myself in the enchanting world of AI and ML, eager to unravel their mysteries and harness their immense potential. What began as a hobby swiftly transformed into a fervent passion, driving me to push boundaries and explore the frontiers of these cutting-edge technologies.</p>
-           <p>Despite my youth, I have developed a profound understanding of AI and ML concepts, algorithms, and tools. My programming skills have been honed, and I have attained proficiency in languages like Python, Java, and C#, as well as frameworks such as TensorFlow, PyTorch, and OpenCV. Through dedicated self-study and active engagement within online communities, I have gained hands-on experience in developing AI models, training neural networks, and utilizing data to extract meaningful insights.</p>
-           <p>My projects have spanned a wide spectrum, including image recognition, natural language processing, predictive analytics, and recommendation systems. I am captivated by the transformative power of AI and ML to revolutionize industries, tackle intricate problems, and enrich human lives. Continuously seeking opportunities to apply my knowledge and expertise to real-world challenges, I am driven to make a tangible impact on the world.</p>
-           <p>Beyond my technical prowess, I am an inquisitive and adaptable learner. I embrace challenges with a growth mindset, fearlessly exploring new concepts and conquering obstacles. Recognizing the value of collaboration and effective communication, I relish the opportunity to collaborate with like-minded individuals, exchanging ideas and collectively pushing the boundaries of innovation.</p>
-           <p>As I embark on my journey as a world-class developer specializing in AI and ML, I remain committed to perpetual learning and evolution. The future possibilities and potential of these technologies to shape our world in profound ways fill me with excitement. With every project, I aspire to leave an indelible impression, unveiling the brilliance of AI and ML through my meticulously crafted code.</p>
-           <p>If you are seeking a young, talented enthusiast in the realms of AI and ML to contribute to your projects, I would be thrilled to collaborate with you. Together, let us paint a future where the possibilities of AI and ML are fully realized, and where brilliance radiates from every line of code.</p>
-        </div>
-        <footer>
-          <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
-          <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
-      </footer>
-        <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+  <header>
+    <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="Blog.html" target="_blank">Blog</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tabs">
+      <nav>
+        <ul class="menu">
+          <li onclick="openTab('tab1')"><a href="#">About Me</a></li>
+          <li onclick="openTab('tab2')"><a href="#">about-pr</a></li>
+          <li onclick="openTab('tab3')"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="tab1" class="tab active">
+    <div class="tab-content active">
+      <h1>About Me</h1>
+      <p>Software development is a creative craft, and I see myself as a masterful artist, weaving brilliance with every
+        stroke of code. - Carson Wu, the Extraordinary Developer.</p>
+      <p>I am Carson Wu, a talented young prodigy from Hong Kong specializing in the fascinating fields of Artificial
+        Intelligence (AI) and Machine Learning (ML). Despite the perceived complexity of software development, I approach it
+        with a mindset of awe and imagination, considering each line of code as a stroke of brilliance I use to create
+        extraordinary things.</p>
+      <p>From a young age, I became enthralled by technology and its boundless possibilities. Fueled by curiosity and
+        determination, I immersed myself in the enchanting world of AI and ML, eager to unravel their mysteries and harness
+        their immense potential. What began as a hobby swiftly transformed into a fervent passion, driving me to push
+        boundaries and explore the frontiers of these cutting-edge technologies.</p>
+      <p>Despite my youth, I have developed a profound understanding of AI and ML concepts, algorithms, and tools. My
+        programming skills have been honed, and I have attained proficiency in languages like Python, Java, and C#, as well
+        as
+        frameworks such as TensorFlow, PyTorch, and OpenCV. Through dedicated self-study and active engagement within online
+        communities, I have gained hands-on experience in developing AI models, training neural networks, and utilizing data
+        to extract meaningful insights.</p>
+      <p>My projects have spanned a wide spectrum, including image recognition, natural language processing, predictive
+        analytics, and recommendation systems. I am captivated by the transformative power of AI and ML to revolutionize
+        industries, tackle intricate problems, and enrich human lives. Continuously seeking opportunities to apply my
+        knowledge and expertise to real-world challenges, I am driven to make a tangible impact on the world.</p>
+      <p>Beyond my technical prowess, I am an inquisitive and adaptable learner. I embrace challenges with a growth mindset,
+        fearlessly exploring new concepts and conquering obstacles. Recognizing the value of collaboration and effective
+        communication, I relish the opportunity to collaborate with like-minded individuals, exchanging ideas and
+        collectively
+        pushing the boundaries of innovation.</p>
+      <p>As I embark on my journey as a world-class developer specializing in AI and ML, I remain committed to perpetual
+        learning and evolution. The future possibilities and potential of these technologies to shape our world in profound
+        ways fill me with excitement. With every project, I aspire to leave an indelible impression, unveiling the
+        brilliance
+        of AI and ML through my meticulously crafted code.</p>
+      <p>If you are seeking a young, talented enthusiast in the realms of AI and ML to contribute to your projects, I would
+        be
+        thrilled to collaborate with you. Together, let us paint a future where the possibilities of AI and ML are fully
+        realized, and where brilliance radiates from every line of code.</p>
+      </div>
+    </div>
+  <div id="tab2" class="tab">
+    <div class="tab-content">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Carson Wu</td>
+        </tr>
+        <tr>
+          <th>Chinese name</th>
+          <td>胡梓燊</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td class="age"></td>
+        </tr>
+        <tr>
+          <th>Born</th>
+          <td class="birth-info">Wu Tsz San Carson<br>25 November 2010<br>Hong Kong</td>
+        </tr>
+        <tr>
+          <th>Epistemology of Love</th>
+          <td>Romantic view of love: This view of love emphasizes romance, passion, and attraction. People believe that love
+            is a intense emotional experience and value romantic expressions and sparks of love.<br> Sacred view of love:
+            This view of love considers love as a sacred force that transcends personal feelings and worldly factors. People
+            believe that love is a sacred connection and value the union of spirit and emotions.<br></td>
+        </tr>
+        <tr>
+          <th>Favorite color</th>
+          <td>
+            <div style="background-color: #872B8D; width: 30px; height: 30px;"></div>
+            Dark Purple<br>Hex: #872B8D<br>RGB: (135, 43, 141)
+          </td>
+        </tr>
+        <tr>
+          <th>Favorite botanical</th>
+          <td style="font-family: 'Times New Roman';">
+            <i>Lavandula stoechas</i>
+          </td>
+        </tr>
+        <tr>
+          <th>Fields</th>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <th>MBTI</th>
+          <td>ENFJ-A</td>
+        </tr>
+        <tr>
+          <th>Religion</th>
+          <td>Atheism</td>
+        </tr>
+        <tr>
+          <th>Sexual orientation</th>
+          <td>Bisexuality, demisexuality</td>
+        </tr>
+        <tr>
+          <th>Signature</th>
+          <td><img src="images/Sign.png" alt="Signature of Carson" style="width: 200px; height: 100px;"></td>
+        </tr>
+        <tr>
+          <th>Zodiac Sign</th>
+          <td>Sagittarius</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="tab3" class="tab">
+    <div class="tab-content">
+      <h1>Contact</h1>
+      <div class="flex">
+        <p>Discord: 893165893469732935<br>carson_we</p>
+        <a href="mailto:carson.developer1125@gmail.com"><u>Email</u></a>
+        <a class="litr litr1" href="https://www.facebook.com/apple.we.98/">Facebook</a>
+        <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
+        <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
+        <a class="litr litr1" href="https://www.linkedin.com/in/carson-wu-34a615325/">LinkedIn</a>
+        <p>Phone: +852 6307 8780</p>
+        <a class="litr litr1" href="https://www.threads.net/@we.carson">Threads</a>
+        <a class="litr litr1" href="https://wa.me/63078780">WhatsApp</a>
+        <a class="litr litr1" href="https://x.com/carson_we1125/">X</a>
+        <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+        <h2>Contact Form</h2>
+        <label for="nameText">Name:</label>
+        <input type="text" id="nameText" placeholder="Enter your name" required><br><br>
+        <label for="emailText">Email:</label>
+        <input type="email" id="emailText" placeholder="Enter your email" required><br><br>
+        <label for="telText">Phone:</label>
+        <input type="tel" id="telText" placeholder="Enter your phone number" required><br><br>
+        <label for="subText">Subject:</label>
+        <input type="text" id="subText" placeholder="Enter the subject" required><br><br>
+        <label for="bodyText">Message:</label><br>
+        <textarea id="bodyText" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+        <button class="btn btn1" onclick="submitHandler()">Submit</button>
+        <a id="mailTo" style="display:none;"></a>
+    </div>
+  </div>
+  <footer>
+    <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
+    <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
+  </footer>
+  <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+  <script src="scripts/nor.js"></script>
 </body>
 </html>
