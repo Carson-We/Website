@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function goToCR() {
-    window.location.href = "li.html";
+    window.location.href = "https://github.com/Carson-We/Documentation/blob/main/Website/carson1125/carson1125/Docs/li.md";
   }
 
   function goToVE() {
-    window.location.href = "ve.html";
+    window.location.href = "https://carson-we.github.io/Documentation/Website/carson1125/carson1125/Docs/ve.md";
   }
 
   const updateVersions = () => {
     document.querySelectorAll(".version").forEach(element => {
-      element.textContent = "v1.1.7.0(060)(1170_060-160824r)";
+      element.textContent = "v1.1.7.0(061)(1170_061-160824r)";
     });
 
     document.querySelectorAll(".cr").forEach(element => {
