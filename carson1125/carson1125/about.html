@@ -21,16 +21,17 @@
     <div class="tabs">
       <nav>
         <ul class="menu">
-          <li onclick="openTab('tab1')"><a href="#">About Me</a></li>
-          <li onclick="openTab('tab2')"><a href="#">about-pr</a></li>
-          <li onclick="openTab('tab3')"><a href="#">Contact</a></li>
+          <li data-tab="tab1"><a href="#">About Me</a></li>
+          <li data-tab="tab2"><a href="#">about-pr</a></li>
+          <li data-tab="tab3"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <div id="tab1" class="tab active">
-    <div class="tab-content active">
-      <h1>About Me</h1>
+  <div class="container">
+    <h1>About Me</h1>
+    <div class="tab" id="tab1">
+      <h2>About Me</h2>
       <p>Software development is a creative craft, and I see myself as a masterful artist, weaving brilliance with every
         stroke of code. - Carson Wu, the Extraordinary Developer.</p>
       <p>I am Carson Wu, a talented young prodigy from Hong Kong specializing in the fascinating fields of Artificial
@@ -65,10 +66,8 @@
         be
         thrilled to collaborate with you. Together, let us paint a future where the possibilities of AI and ML are fully
         realized, and where brilliance radiates from every line of code.</p>
-      </div>
     </div>
-  <div id="tab2" class="tab">
-    <div class="tab-content">
+    <div class="tab" id="tab2">
       <table>
         <tr>
           <th>Name</th>
@@ -142,35 +141,32 @@
         </tr>
       </table>
     </div>
-  </div>
-  <div id="tab3" class="tab">
-    <div class="tab-content">
-      <h1>Contact</h1>
-      <div class="flex">
-        <p>Discord: 893165893469732935<br>carson_we</p>
-        <a href="mailto:carson.developer1125@gmail.com"><u>Email</u></a>
-        <a class="litr litr1" href="https://www.facebook.com/apple.we.98/">Facebook</a>
-        <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
-        <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
-        <a class="litr litr1" href="https://www.linkedin.com/in/carson-wu-34a615325/">LinkedIn</a>
-        <p>Phone: +852 6307 8780</p>
-        <a class="litr litr1" href="https://www.threads.net/@we.carson">Threads</a>
-        <a class="litr litr1" href="https://wa.me/63078780">WhatsApp</a>
-        <a class="litr litr1" href="https://x.com/carson_we1125/">X</a>
-        <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
-        <h2>Contact Form</h2>
-        <label for="nameText">Name:</label>
-        <input type="text" id="nameText" placeholder="Enter your name" required><br><br>
-        <label for="emailText">Email:</label>
-        <input type="email" id="emailText" placeholder="Enter your email" required><br><br>
-        <label for="telText">Phone:</label>
-        <input type="tel" id="telText" placeholder="Enter your phone number" required><br><br>
-        <label for="subText">Subject:</label>
-        <input type="text" id="subText" placeholder="Enter the subject" required><br><br>
-        <label for="bodyText">Message:</label><br>
-        <textarea id="bodyText" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
-        <button class="btn btn1" onclick="submitHandler()">Submit</button>
-        <a id="mailTo" style="display:none;"></a>
+    <div class="tab" id="tab3">
+      <h2>Contact</h2>
+      <p>Discord: 893165893469732935<br>carson_we</p>
+      <a class="litr litr1" href="mailto:carson.developer1125@gmail.com"><u>Email</u></a>
+      <a class="litr litr1" href="https://www.facebook.com/apple.we.98/">Facebook</a>
+      <a class="litr litr1" href="https://github.com/Carson-We">GitHub</a>
+      <a class="litr litr1" href="https://instagram.com/we.carson">Instagram</a>
+      <a class="litr litr1" href="https://www.linkedin.com/in/carson-wu-34a615325/">LinkedIn</a>
+      <p>Phone: +852 6307 8780</p>
+      <a class="litr litr1" href="https://www.threads.net/@we.carson">Threads</a>
+      <a class="litr litr1" href="https://wa.me/63078780">WhatsApp</a>
+      <a class="litr litr1" href="https://x.com/carson_we1125/">X</a>
+      <a class="litr litr1" href="https://linktr.ee/carsonwe">Linktree</a>
+      <h2>Contact Form</h2>
+      <label for="nameText">Name:</label>
+      <input type="text" id="nameText" placeholder="Enter your name" required><br><br>
+      <label for="emailText">Email:</label>
+      <input type="email" id="emailText" placeholder="Enter your email" required><br><br>
+      <label for="telText">Phone:</label>
+      <input type="tel" id="telText" placeholder="Enter your phone number" required><br><br>
+      <label for="subText">Subject:</label>
+      <input type="text" id="subText" placeholder="Enter the subject" required><br><br>
+      <label for="bodyText">Message:</label><br>
+      <textarea id="bodyText" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+      <button class="btn btn1" onclick="submitHandler()">Submit</button>
+      <a id="mailTo" style="display:none;"></a>
     </div>
   </div>
   <footer>

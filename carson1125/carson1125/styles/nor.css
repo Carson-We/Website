@@ -1,4 +1,5 @@
 /* Nor */
+/* Global Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +20,7 @@ body.loaded {
   transform: translateY(0);
 }
 
+/* Header */
 header {
   background-color: #333;
   color: #fff;
@@ -28,6 +30,7 @@ header {
   top: 0;
 }
 
+/* Navigation Bar */
 nav {
   background-color: #333;
   padding: 10px;
@@ -73,11 +76,13 @@ nav ul li a:hover::after {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
+/* Content Area */
 section {
   margin: 20px;
   color: #fff;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
@@ -85,12 +90,12 @@ footer {
   text-align: center;
 }
 
+/* Common Button Styles */
 .btn {
   color: #f8fcfe;
   background: transparent;
   border: 2px solid #f8fcfd;
   border-radius: 5px;
-  color: white;
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
@@ -102,6 +107,7 @@ footer {
   font-family: "Times New Roman", serif;
 }
 
+/* Button Style 1 */
 .btn1 {
   background-color: transparent;
   color: white;
@@ -117,6 +123,7 @@ footer {
   color: black;
 }
 
+/* Dropdown Menu */
 .dropdown {
   position: relative;
   float: right;
@@ -240,11 +247,6 @@ footer {
   .stm-container {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-.column {
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .tree {
@@ -371,6 +373,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
 .flex {
   display: flex;
 }
@@ -492,14 +495,14 @@ button {
   display: none;
 }
 
-.btn-start {
+.btn-start,
+.btn-stop {
   background-color: green;
   color: white;
 }
 
 .btn-stop {
   background-color: red;
-  color: white;
 }
 
 .frame {
