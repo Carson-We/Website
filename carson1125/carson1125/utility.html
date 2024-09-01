@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="styles/nor.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <link href="images/favicon.ico" rel="shortcut icon" />
     <title>Utility | Carson Utility</title>
 </head>
+
 <body>
     <header>
         <h1 class="cw" onclick="goToHomePage()">Carson <span class="cu-icon">Utility</span></h1>
-          <nav>
+        <nav>
             <ul class="menu">
                 <li><a href="about.html" target="_blank">About</a></li>
                 <li><a href="Blog.html" target="_blank">Blog</a></li>
                 <li><a href="contact.html" target="_blank">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
     <section>
         <h1>My Utility</h1>
@@ -24,21 +26,28 @@
     <section class="card-container">
         <div class="card">
             <h2>BMI Calculator</h2>
-            <p>The BMI Calculator is a handy tool designed to calculate your Body Mass Index (BMI). It supports both metric
-                (kg/cm) and imperial (lbs/in) units, allowing you to enter your height and weight in the unit system you prefer.
+            <p>The BMI Calculator is a handy tool designed to calculate your Body Mass Index (BMI). It supports both
+                metric
+                (kg/cm) and imperial (lbs/in) units, allowing you to enter your height and weight in the unit system you
+                prefer.
             </p>
-            <p>By using this calculator, you can easily determine your BMI, which is a measure of body fat based on your height
+            <p>By using this calculator, you can easily determine your BMI, which is a measure of body fat based on your
+                height
                 and weight. It helps you assess whether you are underweight, normal weight, overweight, or obese.</p>
             <a class="btn btn1" href="#bmi-calculator">Learn More</a>
         </div>
         <div class="card">
             <h2>Calculator</h2>
-            <p>A calculator is a tool that performs mathematical calculations. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+            <p>A calculator is a tool that performs mathematical calculations. It allows users to perform basic
+                arithmetic operations such as addition, subtraction, multiplication, and division.</p>
             <a class="btn btn1" href="#calculator">Learn More</a>
         </div>
         <div class="card">
             <h2>Random Code Generator</h2>
-            <p>A Random Code Generator is a tool that generates random codes or strings of characters. These codes can be useful for various purposes such as creating unique identifiers, generating secure passwords, or simulating random data. The generated codes are typically alphanumeric and can be customized based on specific requirements.</p>
+            <p>A Random Code Generator is a tool that generates random codes or strings of characters. These codes can
+                be useful for various purposes such as creating unique identifiers, generating secure passwords, or
+                simulating random data. The generated codes are typically alphanumeric and can be customized based on
+                specific requirements.</p>
             <a class="btn btn1" href="#rcg">Learn More</a>
         </div>
     </section>
@@ -68,28 +77,28 @@
             <div class="calculator">
                 <input type="text" id="display" readonly>
                 <div class="row">
-                  <button onclick="appendToDisplay('7')">7</button>
-                  <button onclick="appendToDisplay('8')">8</button>
-                  <button onclick="appendToDisplay('9')">9</button>
-                  <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('+')">+</button>
                 </div>
                 <div class="row">
-                  <button onclick="appendToDisplay('4')">4</button>
-                  <button onclick="appendToDisplay('5')">5</button>
-                  <button onclick="appendToDisplay('6')">6</button>
-                  <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
                 </div>
                 <div class="row">
-                  <button onclick="appendToDisplay('1')">1</button>
-                  <button onclick="appendToDisplay('2')">2</button>
-                  <button onclick="appendToDisplay('3')">3</button>
-                  <button onclick="appendToDisplay('*')">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('*')">*</button>
                 </div>
                 <div class="row">
-                  <button onclick="appendToDisplay('0')">0</button>
-                  <button onclick="appendToDisplay('.')">.</button>
-                  <button onclick="clearDisplay()">C</button>
-                  <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendToDisplay('/')">/</button>
                 </div>
                 <button onclick="calculate()">=</button>
             </div>
@@ -103,18 +112,20 @@
             </div>
             <div>
                 <h3>Time Elapsed</h3>
-                <p>Generation time:</p><p id="time"></p>
+                <p>Generation time:</p>
+                <p id="time"></p>
             </div>
             <div>
                 <h3>Generated Code</h3>
                 <div id="grcresult"></div>
             </div>
     </section>
-<footer>
-    <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
-    <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
-</footer>
-<iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
-<script src="scripts/nor.js"></script>
+    <footer>
+        <p style="cursor: pointer;" onclick="goToCR()"><span class="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()"><span class="version"></span></p>
+    </footer>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <script src="scripts/nor.js"></script>
 </body>
+
 </html>
