@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const updateVersions = () => {
     document.querySelectorAll(".version").forEach(element => {
-      element.textContent = "v1.1.7.0(063)(1170_063-020924r)";
+      element.textContent = "v1.1.7.0(064)(1170_064-030924r)";
     });
 
     document.querySelectorAll(".cr").forEach(element => {
@@ -45,6 +45,24 @@ document.addEventListener('DOMContentLoaded', function () {
       openTab(tabName);
     });
   });
+
+  document.querySelectorAll('.map a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const tabId = this.getAttribute('href').substring(1);
+      showTab(tabId);
+    });
+  });
+
+  function showTab(tabId) {
+    document.querySelectorAll('.tab').forEach(tab => {
+      if (tab.id === tabId) {
+        tab.style.display = 'block';
+      } else {
+        tab.style.display = 'none';
+      }
+    });
+  }
 
   updateVersions();
   toggleDropdown();
