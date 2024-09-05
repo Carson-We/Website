@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/nor.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>Arcade | Carson Arcade</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cw" onclick="goToHomePage()">Carson <span class="car-icon">Arcade</span></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Carson Arcade</h1>
+    </section>
+    <section class="card-container">
+        <div class="card">
+            <h2>Tic-Tac-toe</h2>
+            <p>Tic-Tac-toe is a classic two-player game, usually played on a 3x3 grid. Players take turns placing an "X" or "O" in the
+            spaces, and the first player to successfully connect them in a row, column, or diagonal wins.</p>
+            <a class="btn btn1" href="#tic-tac-toe">Learn More</a>
+        </div>
+    </section>
+    <section>
+        <h2>Arcade</h2>
+    </section>
+    <section>
+        <div id="game-board">
+            <h2 id="tic-tac-toe">Tic-Tac-toe</h2>
+            <div class="car-row">
+                <div class="cell" onclick="makeMove(0)"></div>
+                <div class="cell" onclick="makeMove(1)"></div>
+                <div class="cell" onclick="makeMove(2)"></div>
+            </div>
+            <div class="car-row">
+                <div class="cell" onclick="makeMove(3)"></div>
+                <div class="cell" onclick="makeMove(4)"></div>
+                <div class="cell" onclick="makeMove(5)"></div>
+            </div>
+            <div class="car-row">
+                <div class="cell" onclick="makeMove(6)"></div>
+                <div class="cell" onclick="makeMove(7)"></div>
+                <div class="cell" onclick="makeMove(8)"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p style="cursor: pointer;"><span onclick="goToCR()" class="cr"></span> | <span onclick="goToVE()"
+                class="version"></span> | This site is open source. <a href="https://github.com/Carson-We/Website"
+                target="_blank">Improve this page.</a></p>
+    </footer>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <script src="scripts/nor.js"></script>
+</body>
+
+</html>
