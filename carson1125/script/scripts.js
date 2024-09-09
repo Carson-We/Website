@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateVersions = () => {
     document.querySelectorAll(".version").forEach((element) => {
-      element.textContent = "v1.1.7.0(073)(1170_073-090924r)";
+      element.textContent = "v1.1.7.0(074)(1170_074-100924r)";
     });
 
     document.querySelectorAll(".cr").forEach((element) => {
