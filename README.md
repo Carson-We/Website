@@ -1,12 +1,12 @@
 # Repository for Website Project
 
-This GitHub repository serves as a central location for storing the code of my website project. The project is licensed under the Mozilla Public License Version 2.0.
+This GitHub repository serves as a central location for storing the code of my website project. The project is licensed under the The Carson Open Source License (CEOSL) Version 2.0.
 
 ## License
 
-The code in this repository is released under the [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/), an open-source license that governs the usage, modification, and distribution of the code. The license provides rights and responsibilities for users and contributors, ensuring the project remains accessible and transparent.
+This repository is licensed under the Carson Open Source License, which provides users and contributors with the freedom to copy, modify, distribute, and sublicense the software under certain conditions. The project is governed by the The Carson Open Source License (CEOSL) Version 2.0 in addition to the terms outlined in this license.
 
-For a detailed understanding of the terms and conditions of the Mozilla Public License Version 2.0, please refer to the [LICENSE](LICENSE) file in this repository.
+For a detailed understanding of the terms and conditions of the The Carson Open Source License (CEOSL) Version 2.0, please refer to the [LICENSE](LICENSE) file in this repository.
 
 ## Using MonoRepo Approach
 
@@ -20,7 +20,7 @@ Contributions to this website project are highly appreciated. If you wish to con
 - Make your changes and thoroughly test them.
 - Submit a pull request describing the modifications and the rationale behind them.
 
-By contributing to this project, you agree to license your contributions under the terms of the Mozilla Public License Version 2.0.
+By contributing to this project, you agree to license your contributions under the terms of the The Carson Open Source License (CEOSL) Version 2.0.
 
 ## Contact Information
 
@@ -32,21 +32,21 @@ Thank you for your interest and contributions to the project!
 
 ### carson1125
 
-- [carson1125-alpha.github.io: my website(alpha version)(Obsolete version)](https://carson-we.github.io/Obsolete/Website/carson1125/carson1125-alpha.github.io/)
-- [carson1125-beta.github.io: my website(beta version)(Obsolete version)](https://carson-we.github.io/Obsolete/Website/carson1125/carson1125-beta.github.io/)
-- [carson1125.github.io: my website(Obsolete version)](https://carson-we.github.io/Obsolete/Website/carson1125/carson1125)
-- [carson1125: my website](https://carson-we.github.io/Website/carson1125/carson1125/)
+- [carson1125-alpha.github.io: my website(alpha version)(Obsolete version)](https://carson1125.github.io/Obsolete/Website/carson1125/carson1125-alpha.github.io/)
+- [carson1125-beta.github.io: my website(beta version)(Obsolete version)](https://carson1125.github.io/Obsolete/Website/carson1125/carson1125-beta.github.io/)
+- [carson1125.github.io: my website(Obsolete version)](https://carson1125.github.io/Obsolete/Website/carson1125/carson1125)
+- [carson1125: my website](https://carson1125.github.io/Website/carson1125/carson1125/)
 
 ### pess-unify
 
-- [pess-unify-beta.github.io: Unify website(beta version)(Obsolete version)](https://carson-we.github.io/Obsolete/Website/pess-unify/pess-unify-beta.github.io/)
-- [pess-unify.github.io: Unify website(Deployed by Carson Wu)(Obsolete version)](https://carson-we.github.io/Obsolete/Website/pess-unify/pess-unify.github.io/)
+- [pess-unify-beta.github.io: Unify website(beta version)(Obsolete version)](https://carson1125.github.io/Obsolete/Website/pess-unify/pess-unify-beta.github.io/)
+- [pess-unify.github.io: Unify website(Deployed by Carson Wu)(Obsolete version)](https://carson1125.github.io/Obsolete/Website/pess-unify/pess-unify.github.io/)
 - [pess-unify.github.io: Unify website(Deployed by pess-unify)](https://pess-unify.github.io)
 
-[self: my first website(Obsolete version)](https://carson-we.github.io/Obsolete/Website/Self/)
+[self: my first website(Obsolete version)](https://carson1125.github.io/Obsolete/Website/Self/)
 
 ### Utility
 
-- [Utility-alpha.github.io: my utility website(alpha version)(Obsolete version)](https://carson-we.github.io/Obsolete/Website/Utility/Utility-alpha.github.io/)
-- [Utility-beta.github.io: my utility website(beta version(Obsolete version)](https://carson-we.github.io/Obsolete/Website/Utility/Utility-beta.github.io/)
-- [Utility.github.io: my utility website(Obsolete version)](https://carson-we.github.io/Obsolete/Website/Utility/Utility.github.io/)
+- [Utility-alpha.github.io: my utility website(alpha version)(Obsolete version)](https://carson1125.github.io/Obsolete/Website/Utility/Utility-alpha.github.io/)
+- [Utility-beta.github.io: my utility website(beta version(Obsolete version)](https://carson1125.github.io/Obsolete/Website/Utility/Utility-beta.github.io/)
+- [Utility.github.io: my utility website(Obsolete version)](https://carson1125.github.io/Obsolete/Website/Utility/Utility.github.io/)

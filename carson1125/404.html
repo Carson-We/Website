@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>404 Page | Carson Wu</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cw" onclick="goToHomePage()">Carson Wu</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="error-404">
+        <div style="display: flex; justify-content: center;" class="error-404">
+            <h1 style="color: purple;">Error 404</h1>
+        </div>
+        <div style="display: flex; justify-content: center;" class="error-404">
+            <p style="color: purple">This page could not be found.</p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button class="btn btn1" onclick="window.open('index.html', '_self')">Back Home</button>
+        </div>
+    </div>
+    <footer>
+        <p style="cursor: pointer;"><span onclick="goToCR()" class="cr"></span> | <span onclick="goToVE()"
+                class="version"></span> | This site is open source. <a href="https://github.com/Carson-We/Website"
+                target="_blank">Improve this page.</a></p>
+    </footer>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

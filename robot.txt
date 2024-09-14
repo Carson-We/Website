@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Crawl-delay: 5
+Disallow:
+Crawl-delay: 1
 Sitemap: https://carson-we.github.io/Website/sitemap.xml
