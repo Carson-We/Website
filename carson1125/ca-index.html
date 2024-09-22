@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>Carson Account | Carson Wu</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cw" onclick="goToCAHomePage()">Carson <span class="ca-icon">Account</span></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to the era of Carson Account</h1>
+        <p>With a Carson Account, you can access all Carson services.</p>
+        <p>Log in to manage your account.</p>
+    </div>
+    <div class="ca-frame-container">
+        <div class="ca-frame">
+            <h2>Login</h2>
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="signin-Username">
+                <label for="password">Password:</label>
+                <input type="password" id="signin-Password">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" id="RememberMe">Remember me on this device for future logins<br>(Caution: Not
+                    recommended on public or shared devices)
+                </label>
+                <button class="btn btn1" onclick="login()">Login</button>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+        <div class="ca-frame">
+            <h2>Register</h2>
+            <div class="input-container">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="userid">User-ID:</label>
+                <input type="text" id="userid">
+                <label for="clientid">Client-ID:</label>
+                <input type="text" id="clientid">
+                <label for="account-class">Select Account Type:</label>
+                <select id="account-class">
+                    <option value="personal">Personal</option>
+                    <option value="company">Company</option>
+                </select>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="dateDropdowns">Born Date:</label>
+                <input type="date" id="dateDropdowns" class="form-control">
+                <label for="country">Country or Region:</label>
+                <select id="country" name="country" class="form-control"></select>
+                <label for="phoneCountry">Phone Country Code:</label>
+                <select id="phoneCountry" class="form-control"></select>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" class="form-control">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" class="form-control"></select>
+                <input type="text" placeholder="Specify gender">
+                <label for="password">Password:</label>
+                <input type="password" id="password" oninput="checkPasswordStrength()">
+                <meter max="4" id="password-strength-meter"></meter>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" oninput="checkPasswordMatch()">
+                <p id="passwordMatchMessage"></p>
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" id="agreeTerms">I agree to the Terms of Use Agreement
+                </label>
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" id="receiveNews">I want to receive the latest news from Carson
+                </label>
+                <button class="btn btn1" onclick="signUp()">Register</button>
+                <p id="signupMessage"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="cursor: pointer;"><span onclick="goToCR()" class="cr"></span> | <span onclick="goToVE()"
+                class="version"></span> | This site is open source. <a href="https://github.com/Carson-We/Website"
+                target="_blank">Improve this page.</a></p>
+    </footer>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/websitekit.js"></script>
+</body>
+
+</html>
