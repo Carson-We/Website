@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Since this repository is significant (original) it will be archived on 28 September 2024 16:57 (UTC+08:00).
+
 # Repository for Website Project
 
 This GitHub repository serves as a central location for storing the code of my website project. The project is licensed under the Carson Open Source License (CEOSL) .
